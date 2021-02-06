@@ -122,7 +122,7 @@ const Module = ({
       </TagList>
       {link 
         ? <MyLink to={link}>Acessar</MyLink>
-        : <Message>Aguarde...</Message>
+        : <Message>Em breve!</Message>
       }
     </Container>
   );
