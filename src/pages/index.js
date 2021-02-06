@@ -62,7 +62,7 @@ const modules = [
   }
 ];
 
-const IndexPage = () => {
+const IndexPage = ({ location }) => {
   const renderModules = () => {
     return modules.map((module) => (
       <Module
@@ -77,7 +77,10 @@ const IndexPage = () => {
   };
 
   return (
-    <Layout>
+    <Layout
+      location={location}
+      noMenu
+    >
       <SEO title="Learning" />
       <Container>
         <Logo src="https://www.vainaweb.com.br/assets/Logo-VnW.svg" />

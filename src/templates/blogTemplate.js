@@ -3,14 +3,13 @@ import { graphql } from "gatsby";
 import styled from "styled-components";
 import RehypeReact from "rehype-react";
 
-const Article = styled.article`
-  width: 95%;
-  max-width: 1440px;
-  margin: 0 auto;
+// Layout
+import Layout from '../components/layout';
 
-  @media (min-width: 766px) {
-    width: 65%
-  }
+const Article = styled.article`
+  width: 85%;
+  padding: 0 10%;
+  margin-left: 15vw;
 `;
 
 const Title = styled.h1`
@@ -19,6 +18,7 @@ const Title = styled.h1`
 `;
 
 const SubTitle = styled.h2`
+  margin: 3rem 0;
   text-align: center;
   text-decoration: underline;
   font: 400 1.5rem 'Open Sans', sans-serif;
@@ -31,8 +31,9 @@ const Paragraph = styled.p`
 
 const Image = styled.img`
   display: block;
-  width: 60%;
-  margin: 2rem auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 4rem auto;
 `;
 
 const List = styled.ol`
@@ -43,6 +44,7 @@ const List = styled.ol`
 
 const Item = styled.li`
   margin: .75rem 0;
+  font: 400 1rem 'Open Sans', sans-serif;
 `;
 
 const CodeContainer = styled.pre`
@@ -50,7 +52,8 @@ const CodeContainer = styled.pre`
   border-radius: 4px;
   color: #f8f8f2;
   white-space: wrap;
-  background-color: #272822;
+  font: 400 1rem 'Open Sans', sans-serif;
+  background-color: rgb(24, 48, 85);
 `;
 
 const renderAst = new RehypeReact({
@@ -68,14 +71,17 @@ const renderAst = new RehypeReact({
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
+  location
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { htmlAst } = markdownRemark;
 
   return (
-    <Article>
-      {renderAst(htmlAst)}
-    </Article>
+    <Layout location={location}>
+      <Article>
+        {renderAst(htmlAst)}
+      </Article>
+    </Layout>
   )
 };
 

@@ -2,6 +2,7 @@
 slug: "/module-1/how-it-works"
 date: "2021-02-05"
 title: "Como a internet funciona?"
+id: 0
 ---
 
 # 00 - Como funciona a internet?
