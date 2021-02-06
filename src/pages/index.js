@@ -97,7 +97,7 @@ const IndexPage = ({ location }) => {
       location={location}
       noMenu
     >
-      <SEO title="Learning" />
+      <SEO title="Academia" />
       <Container>
         <Logo src="https://www.vainaweb.com.br/assets/Logo-VnW.svg" />
         <Message>
