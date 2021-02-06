@@ -14,6 +14,10 @@ const Container = styled.main`
   width: 80%;
   margin: 0 auto;
   max-width: 1440px;
+
+  @media (max-width: 667px) {
+    width: 90%;
+  }
 `;
 
 const Logo = styled.img`
@@ -28,6 +32,10 @@ const Message = styled.span`
   margin: 1.5rem auto;
   text-align: center;
   font: 400 1.15rem 'Roboto', sans-serif;
+
+  @media (max-width: 667px) {
+    width: 90%;
+  }
 `;
 
 const ModulesList = styled.ul`
@@ -39,6 +47,11 @@ const ModulesList = styled.ul`
   margin: 2rem auto;
   padding: 0;
   list-style: none;
+
+  @media (max-width: 667px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 
 const modules = [

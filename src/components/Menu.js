@@ -1,9 +1,11 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
 // Images
 import logo from '../assets/logo.svg';
+import menu from '../assets/menu.svg';
+import close from '../assets/close.svg';
 
 const Container = styled.nav`
 	position: fixed;
@@ -13,6 +15,32 @@ const Container = styled.nav`
 	border-right: 1px solid #E6ECF1;
 	background-color: #F5F7F9;
 	overflow-y: scroll;
+
+	@media (max-width: 667px) {
+		width: 80vw;
+		transform: ${props => props.isVisible ? 'translateX(0)' : 'translateX(-150%)'};
+  }
+`;
+
+const Button = styled.button`
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	width: 36px;
+	height: 36px;
+	border: none;
+	border-radius: 12px;
+	outline: none;
+	background: #FFAC2D url(${menu}) no-repeat center;
+
+	${({ isVisible }) => isVisible && `
+		left: calc(80vw + 5px);
+		background: #FFAC2D url(${close}) no-repeat center;
+  `}
+
+	@media(max-width: 667px) {
+		display: block;
+	}
 `;
 
 const Logo = styled(Link)`
@@ -51,6 +79,8 @@ const Menu = ({
 	links,
 	location
 }) => {
+	const [isVisible, setVisible] = useState(false);
+
 	const isActive = (item, location) => {
 		if (item.slug.includes(location.pathname)) {
 			return true
@@ -72,14 +102,25 @@ const Menu = ({
 	};
 
   return (
-    <Container>
-			<Logo
-				to="/"
+		<Fragment>
+			<Button
+				onClick={() => {
+					setVisible(!isVisible);
+				}}
+				isVisible={isVisible}
+			/>
+			<Container
+				isVisible={isVisible}
 			>
-				<Image src={logo} />
-			</Logo>
-			{renderLinks()}
-    </Container>
+				<Logo
+					to="/"
+				>
+					<Image src={logo} />
+				</Logo>
+				{renderLinks()}
+			</Container>
+		</Fragment>
+			
   )
 };
 

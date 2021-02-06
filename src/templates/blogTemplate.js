@@ -11,6 +11,12 @@ const Article = styled.article`
   max-width: 1110px;
   padding: 0 10%;
   margin-left: 20vw;
+
+  @media (max-width: 667px) {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 2%;
+  }
 `;
 
 const Title = styled.h1`

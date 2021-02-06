@@ -12,6 +12,10 @@ const Container = styled.li`
   padding: 1rem;
   border-radius: 8px;
   background-color: #0F2B92;
+
+  @media (max-width: 667px) {
+    width: 100%;
+  }
 `;
 
 const Name = styled.span`
