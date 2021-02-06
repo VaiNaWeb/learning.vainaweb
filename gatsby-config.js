@@ -25,6 +25,7 @@ module.exports = {
       options: {
         fonts: [
           `limelight`,
+          `Open Sans\:300,400,700`,
           `Roboto\:300,400,700` // you can also specify font weights and styles
         ],
         display: 'swap'
