@@ -20,7 +20,6 @@ const Title = styled.h1`
 
 const SubTitle = styled.h2`
   margin: 3rem 0;
-  text-align: center;
   font: 700 1.5rem 'Open Sans', sans-serif;
 `;
 
