@@ -1,7 +1,7 @@
 ---
 slug: "/module-1/how-sites-are-built"
 date: "2021-02-05"
-title: "Como os sites são construídos?"
+title: "01 - Como os sites são construídos?"
 id: 1
 ---
 

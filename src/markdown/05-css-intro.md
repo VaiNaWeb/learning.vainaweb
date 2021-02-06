@@ -1,7 +1,7 @@
 ---
 slug: "/module-1/css-intro"
 date: "2021-02-05"
-title: "CSS"
+title: "05 - CSS"
 id: 5
 ---
 

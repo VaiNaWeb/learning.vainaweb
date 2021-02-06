@@ -1,7 +1,7 @@
 ---
 slug: "/module-1/css-box-model"
 date: "2021-02-05"
-title: "CSS: Box Model"
+title: "07 - CSS: Box Model"
 id: 7
 ---
 

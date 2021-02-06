@@ -1,7 +1,7 @@
 ---
 slug: "/module-1/html-hands-on"
 date: "2021-02-05"
-title: "HTML na prática: Títulos, Textos, Listas, Imagens e Links"
+title: "02 - HTML na prática: Títulos, Textos, Listas, Imagens e Links"
 id: 2
 ---
 
