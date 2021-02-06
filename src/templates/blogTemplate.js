@@ -1,10 +1,13 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 import RehypeReact from "rehype-react";
 
 // Layout
 import Layout from '../components/layout';
+
+// Assets
+import arrow from '../assets/arrow.svg';
 
 const Article = styled.article`
   width: 85%;
@@ -73,6 +76,70 @@ const CodeContainer = styled.pre`
   background-color: rgb(24, 48, 85);
 `;
 
+const Links = styled.nav`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0 4rem;
+
+  ${({ prev, next }) => prev && !next &&`
+		justify-content: flex-start;
+  `}
+
+  ${({ prev, next }) => !prev && next &&`
+		justify-content: flex-end;
+  `}
+
+  ${({ prev, next }) => prev && next &&`
+		justify-content: space-around;
+  `}
+`;
+
+const NavItem = styled(Link)`
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+  min-height: 80px;
+  padding: 1rem 5%;
+  border: 1px solid rgb(230, 236, 241);
+  box-shadow: rgb(116 129 141 / 10%) 0px 3px 8px 0px;
+  color: #505050;
+  text-decoration: none;
+  font: 400 .95rem 'Open Sans', sans-serif;
+
+  ${({ prev }) => prev &&`
+		justify-content: flex-start;
+  `}
+
+  ${({ next }) => next &&`
+    justify-content: flex-end;
+    text-align: right;
+  `}
+
+  &:hover {
+    color: #FFAC2D;
+  }
+`;
+
+const Icon = styled.img`
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  
+  ${({ prev }) => prev &&`
+    left: 8px;
+    transform: translateY(-50%) rotate(180deg);
+  `}
+
+  ${({ next }) => next &&`
+    right: 8px;
+    transform: translateY(-50%);
+  `}
+`;
+
 const renderAst = new RehypeReact({
   createElement: React.createElement,
   components: {
@@ -90,6 +157,7 @@ const renderAst = new RehypeReact({
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
+  pageContext,
   location
 }) {
   const { markdownRemark } = data // data.markdownRemark holds your post data
@@ -99,6 +167,36 @@ export default function Template({
     <Layout location={location}>
       <Article>
         {renderAst(htmlAst)}
+        <Links
+          prev={pageContext.prev}
+          next={pageContext.next}
+        >
+          {pageContext.prev && (
+            <NavItem
+              to={pageContext.prev.frontmatter.slug}
+              prev
+            >
+              {pageContext.prev.frontmatter.title}
+
+              <Icon
+                src={arrow}
+                prev
+              />
+            </NavItem>
+          )}
+          {pageContext.next && (
+            <NavItem
+              to={pageContext.next.frontmatter.slug}
+              next
+            >
+              {pageContext.next.frontmatter.title}
+              <Icon
+                src={arrow}
+                next
+              />
+            </NavItem>
+          )}
+        </Links>
       </Article>
     </Layout>
   )

@@ -15,7 +15,7 @@ const Layout = ({ children, location, noMenu }) => (
     query={graphql`
       query SiteTitleQuery {
         allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
+          sort: { order: ASC, fields: [frontmatter___id] }
           limit: 1000
         ) {
           edges {
