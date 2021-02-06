@@ -8,6 +8,9 @@ import SEO from "../components/seo"
 import Module from "../components/module";
 
 const Container = styled.main`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 80%;
   margin: 0 auto;
   max-width: 1440px;
@@ -44,7 +47,7 @@ const modules = [
     name: 'Páginas Web Responsivas',
     description: 'Aprendendo como a internet funciona e a criar páginas responsivas',
     tags: ['html', 'css', 'responsive design'],
-    link: 'https://ygor-luiz-fonseca.gitbook.io/vnw/',
+    link: 'module-1/how-it-works',
   },
   {
     id: 2,

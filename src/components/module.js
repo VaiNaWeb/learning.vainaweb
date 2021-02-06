@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "gatsby";
 
 const Container = styled.li`
   display: flex;
@@ -67,7 +68,7 @@ const Tag = styled.li`
   background-color: #FFAC2D;
 `;
 
-const Link = styled.a`
+const MyLink = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +117,7 @@ const Module = ({
         {renderTags()}
       </TagList>
       {link 
-        ? <Link href={`${link}`}>Acessar</Link>
+        ? <MyLink to={link}>Acessar</MyLink>
         : <Message>Aguarde...</Message>
       }
     </Container>

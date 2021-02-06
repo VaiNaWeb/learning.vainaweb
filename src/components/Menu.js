@@ -7,17 +7,19 @@ import logo from '../assets/logo.svg';
 
 const Container = styled.nav`
 	position: fixed;
-  width: 15vw;
+  width: 20vw;
 	height: 100vh;
-	padding: 1rem 1%;
+	padding: 1rem 0;
 	border-right: 1px solid #E6ECF1;
 	background-color: #F5F7F9;
+	overflow-y: scroll;
 `;
 
 const Logo = styled(Link)`
 	display: flex;
 	justify-content: center;
-	width: 100%;
+	width: 70%;
+	margin: 0 auto 2rem;
 `;
 
 const Image = styled.img`
@@ -25,15 +27,23 @@ const Image = styled.img`
 `;
 
 const Item = styled(Link)`
-	display: block;
-	margin: 1.5rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	margin: .5rem 0;
+	padding: 0 5%;
 	color: #505050;
+	text-align: center;
 	text-decoration: none;
-	font: 700 .8rem 'Open Sans', sans-serif;
+	font: 700 .7rem 'Open Sans', sans-serif;
 
 	${({ active }) => active && `
-		color: #00145D;
-    text-decoration: underline;
+		border: 1px solid #E6ECF1;
+		border-right: none;
+		color: #FFAC2D;
+		background: #FFF;
   `}
 `;
 

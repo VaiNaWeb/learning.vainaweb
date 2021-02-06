@@ -8,25 +8,37 @@ import Layout from '../components/layout';
 
 const Article = styled.article`
   width: 85%;
+  max-width: 1110px;
   padding: 0 10%;
-  margin-left: 15vw;
+  margin-left: 20vw;
 `;
 
 const Title = styled.h1`
   text-align: center;
-  font: 400 2.5rem 'Open Sans', sans-serif;
+  font: 700 2.25rem 'Open Sans', sans-serif;
 `;
 
 const SubTitle = styled.h2`
   margin: 3rem 0;
   text-align: center;
-  text-decoration: underline;
-  font: 400 1.5rem 'Open Sans', sans-serif;
+  font: 700 1.5rem 'Open Sans', sans-serif;
+`;
+
+const ThirdTitle = styled.h3`
+  margin: 3rem 0;
+  font: 700 1.15rem 'Open Sans', sans-serif;
+`;
+
+const FourthTitle = styled.h3`
+  margin: 3rem 0;
+  font: 700 1rem 'Open Sans', sans-serif;
 `;
 
 const Paragraph = styled.p`
   margin: 1.5rem 0;
-  font: 400 1rem 'Open Sans', sans-serif;
+  color: #505050;
+  font: 400 .95rem 'Open Sans', sans-serif;
+  line-height: 1.75;
 `;
 
 const Image = styled.img`
@@ -61,6 +73,8 @@ const renderAst = new RehypeReact({
   components: {
     h1: Title,
     h2: SubTitle,
+    h3: ThirdTitle,
+    h4: FourthTitle,
     p: Paragraph,
     img: Image,
     ol: List,
