@@ -17,7 +17,7 @@ A tag **form** \(formulário\) é utilizada para agrupar elementos interativos, 
 
 Exemplo de um formulário html:
 
-```text
+```html
 <!-- Simple form which will send a POST request -->
 <form action="" method="post">
   <label for="name">Name:</label>
@@ -28,7 +28,7 @@ Exemplo de um formulário html:
 
 Vamos quebrar esse código em partes:
 
-```text
+```html
 <!-- Simple form which will send a POST request -->
 <form action="" method="post">
 
@@ -37,19 +37,19 @@ Vamos quebrar esse código em partes:
 
 Primeiro criamos uma tag **form** que será responsável por agrupar todos os campos e buttons que iremos usar.
 
-```text
+```html
 <label for="name">Name:</label>
 ```
 
 Agora criamos uma tag **label** que é usada como legenda para a tag **input** que vamos usar no próximo passo.
 
-```text
+```html
 <input id="name" type="text" name="name" placeholder="escreva seu nome">
 ```
 
 A tag **input** é como criamos um campo onde o usuário irá digitar as informações, esse campo pode ser de diferentes tipos: \(text, email, password\). No nosso caso o **input** tem o tipo **"text"**, notem também que usamos um atributo chamado **placeholder** que é utilizado para exibir um texto dentro do campo enquanto ele está vazio.
 
-```text
+```html
 <input type="submit" value="Save">
 ```
 
@@ -57,7 +57,7 @@ Por último temos um **input** com um type especial chamado **submit**, esse **i
 
 Agrupando todas essas tags nós temos nosso primeiro formulário pronto :\)
 
-```text
+```html
 <form action="" method="post">
   <label for="name">Name:</label>
   <input id="name" type="text" name="name" placeholder="escreva seu nome">

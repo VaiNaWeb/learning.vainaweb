@@ -14,10 +14,10 @@ Como já sabemos, nós conseguimos modificar a aparência de nossos sites com o 
 
 O **seletor** de **tag** é o mais simples, com ele nós aplicamos os valores em todas as vezes que uma determinada **tag** for usada na página:
 
-```text
- p {
-   color: blue;
- }
+```css
+p {
+  color: blue;
+}
 ```
 
 No exemplo acima nós estamos dizendo que toda vez que uma **tag** **p** for encontrada na página pelo **navegador** ele deve renderizar com a cor azul.
@@ -28,7 +28,7 @@ No exemplo acima nós estamos dizendo que toda vez que uma **tag** **p** for enc
 
 O **seletor** de **id** é aplicado no elemento com o id especificado, por exemplo:
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,10 +47,10 @@ O **seletor** de **id** é aplicado no elemento com o id especificado, por exemp
 </html>
 ```
 
-```text
-  #button {
-    background-color: purple;
-  }
+```css
+#button {
+  background-color: purple;
+}
 ```
 
 Nesse caso apenas o primeiro **button** ficaria com o fundo roxo, como o **id** é único \(não podemos aplicar o mesmo **id** em mais de um elemento da página\), o seletor de **id** não é recomendado. Vamos falar do seletor mais usado entao!
@@ -59,7 +59,7 @@ Nesse caso apenas o primeiro **button** ficaria com o fundo roxo, como o **id** 
 
 Sem dúvidas o melhor e mais usado tipo de **seletor**, ele irá aplicar os estilos em qualquer elemento que tenha a classe especificada. Vamos ao exemplo:
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,10 +78,10 @@ Sem dúvidas o melhor e mais usado tipo de **seletor**, ele irá aplicar os esti
 </html>
 ```
 
-```text
-  .button {
-    background-color: purple;
-  }
+```css
+.button {
+  background-color: purple;
+}
 ```
 
 Diferente do **seletor** de **id** esse **seletor** irá ser aplicado em qualquer elemento com a **classe** "button". Notem que no **seletor** de **classe** nós usamos um ponto \(**.**\) antes do nome. Com esse tipo de **seletor** nosso **CSS** será muito mais reaproveitado, podemos criar uma classe e reutilizar em diversos elementos na página.

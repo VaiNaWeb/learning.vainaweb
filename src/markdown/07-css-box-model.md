@@ -14,7 +14,7 @@ Entender o conceito de **box model** é importantíssimo para criar nossos layou
 
 Vamos criar uma **div** e entender como o **box model** define o que vemos na página:
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,25 +30,25 @@ Vamos criar uma **div** e entender como o **box model** define o que vemos na p�
 </html>
 ```
 
-```text
-  .box {
-    width: 150px;
-    height: 150px;
-    background-color: red;
-  }
+```css
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
 ```
 
 Com esse código inicial vamos ver uma quadrado vermelho na tela com 150px de largura e 150px de altura, vamos adicionar mais **propriedades** no nosso **CSS** e ver como isso afeta nosso layout:
 
-```text
-  .box {
-    width: 150px;
-    height: 150px;
-    margin: 15px;
-    padding: 15px;
-    border: 2px solid black;
-    background-color: red;
-  }
+```css
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid black;
+  background-color: red;
+}
 ```
 
 Vamos quebrar isso em partes:
@@ -80,16 +80,16 @@ Esse comportamento não é tão evidente e acaba confundindo os desenvolvedores 
 
 Como vimos o **navegador** não define os tamanhos dos elementos de uma maneira muito conveniente, mas nós podemos sobscrever esse comportamento com uma **propriedade** chamada **box-sizing**, vamos colocar em prática:
 
-```text
-  .box {
-    box-sizing: border-box;
-    width: 150px;
-    height: 150px;
-    margin: 15px;
-    padding: 15px;
-    border: 2px solid black;
-    background-color: red;
-  }
+```css
+.box {
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid black;
+  background-color: red;
+}
 ```
 
 Com essa propriedade nova \(**box-sizing**\) o nosso **navegador** irá respeitar os tamanhos especificados nas propriedades **width** e **height**. Se inspecionarmos nosso quadrado novamente vamos perceber que agora ele será renderizado com exatos 150px por 150px
@@ -98,10 +98,10 @@ Com essa propriedade nova \(**box-sizing**\) o nosso **navegador** irá respeita
 
 Como é muito mais fácil trabalhar com o **box-sizing** usando o valor **border-box** é uma boa prática aplicá-lo na página toda. Podemos fazer isso criando um **seletor universal**:
 
-```text
-  * {
-    box-sizing: border-box;
-  }
+```css
+* {
+  box-sizing: border-box;
+}
 ```
 
 Agora todos os elementos da página irão respeitar os tamanhos especificados no nosso **CSS** ❤️ ❤️ ❤️.

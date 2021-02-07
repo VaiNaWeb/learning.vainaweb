@@ -11,7 +11,7 @@ id: 2
 
 As tags delimitam o início e o fim de um conteúdo específico, elas são escritas no seguinte formato:
 
-```text
+```html
 <nome-da-tag>Conteúdo da tag</nome-da-tag>
 ```
 
@@ -19,15 +19,15 @@ Notem que as tags possuem abertura e fechamento, a tag de abertura e escrita usa
 
 Ex \(tags fictícias para fins de exemplificação\):
 
-```text
+```html
 <meu-titulo>Conteúdo da tag</meu-titulo>
 ```
 
-```text
+```html
 <minha-imagem>Conteúdo da tag</minha-imagem>
 ```
 
-```text
+```html
 <meu-texto>Conteúdo da tag</meu-texto>
 ```
 
@@ -35,7 +35,7 @@ Ex \(tags fictícias para fins de exemplificação\):
 
 Como vimos o **HTML** é a linguagem que usamos para marcar nossos documentos que serão lidos na web utilizando tags. Vamos conhecer na prática algumas dessas tags, mas antes vamos entender a estrutura básica que todo documento **HTML** precisa ❤️.
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,45 +51,45 @@ Como vimos o **HTML** é a linguagem que usamos para marcar nossos documentos qu
 
 Vamos entender isso por partes:
 
-```text
+```html
 <!DOCTYPE html>
 ```
 
 Essa primeira linha é onde o documento informa para o cliente \(navegador\) que se trata de um documento **HTML**.
 
-```text
+```html
 <html lang="en">
 </html>
 ```
 
 A tag **html** é o container de todo o seu documento ele também define o idioma da sua página através do atributo **lang**.
 
-```text
+```html
 <head>
 </head>
 ```
 
 A tag **head** é utilizada como um container sobre informações da página que não serão exibidas diretamente mas muito importantes como: Título, Arquivos de Estilos \(CSS\) e Metadata \(autor do documento, palavras chave, configuração de caracteres, etc\).
 
-```text
+```html
   <meta charset="UTF-8">
 ```
 
 É inserida dentro da tag **head** e especifica a configuração dos caracteres.
 
-```text
+```html
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 
 É inserida dentro da tag **head** e usada para definir o tamanho de referência do conteúdo e a sua escala, tem a função de melhorar e leitura do conteúdo em dispositivos móveis.
 
-```text
+```html
   <title>Document</title>
 ```
 
 É inserida dentro da tag **head** e define o título do documento que é exibido na aba do seu navegador.
 
-```text
+```html
 <body>
 </body>
 ```
@@ -100,7 +100,7 @@ Aqui entra efetivamente o conteúdo da página, é onde vamos passar a maior par
 
 Todos os documentos possuem títulos. Eles expresssam a hierarquia do nosso conteúdo e no **HTML** não é diferente, temos 6 níveis de títulos disponíveis que são usados da seguinte forma:
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -123,7 +123,7 @@ Todos os documentos possuem títulos. Eles expresssam a hierarquia do nosso cont
 
 Nem só de títulos vive um texto, para descrever nosso conteúdo escrito temos uma tag especial chamada **p** \(esse **p** vem de paragraph - parágrafo\) e pode ser usado da seguinte forma:
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -151,7 +151,7 @@ Também podemos exibir listas em nossos documentos. Temos 2 opções, uma tag pa
 
 ### Listas ordenadas:
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -174,7 +174,7 @@ Também podemos exibir listas em nossos documentos. Temos 2 opções, uma tag pa
 
 ### Listas não ordenadas:
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -205,7 +205,7 @@ Os items de ambas as listas são expressos pela tag **li**.
 
 Também podemos fazer uso de medias em nossos documentos, as imagens são um ótimo meio de expressar uma idéia. Elas podem ser representadas em nosso documento **HTML** da seguinte forma:
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -221,7 +221,7 @@ Também podemos fazer uso de medias em nossos documentos, as imagens são um ót
 
 Notem que diferentemente das outras tags as imagens não são compostas de um par de abertura/fechamento e são utilizadas do seguinte modo:
 
-```text
+```html
   <img src="" alt="" />
 ```
 
@@ -231,11 +231,11 @@ Os 2 atributos presentes na tag indicam o endereço da imagem a ser carregado \(
 
 O link é a tag fundamental da web, graças a ela nós conseguimos associar os diferentes sites existentes na internet criando o que chamamos de rede. Vamos ver um exemplo:
 
-```text
+```html
   <a href="https://www.google.com.br">Google</a>
 ```
 
-```text
+```html
   <a href="about.html">Sobre</a>
 ```
 

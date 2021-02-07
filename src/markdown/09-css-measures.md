@@ -18,20 +18,20 @@ Podemos usá-lo para especificar tamanhos de elementos, fontes e aplicar espaço
 
 Alguns exemplos:
 
-```text
+```css
 .box {
   width: 500px;
   height: 500px;
 }
 ```
 
-```text
+```css
 .container {
   margin: 30px auto;
 }
 ```
 
-```text
+```css
 .message {
   font-size: 24px;
 }
@@ -41,14 +41,14 @@ Alguns exemplos:
 
 Diferente do **pixel** as medidas em porcentagem são **relativas**, isso nos possibilita criar layouts flexíveis que se adaptam melhor a diferentes tamanhos de telas. Vamos entender isso com alguns exemplos:
 
-```text
+```html
 <div class="wrapper">
   <div class="box">
   </div>
 <div>
 ```
 
-```text
+```css
 .wrapper {
   width: 500px;
   height: 400px;
@@ -78,14 +78,14 @@ Guarde isso:
 
 Outra unidade relativa é o **em**, muito usado para especificar tamanhos de fontes e espaçamentos. Essa unidade usa o tamanho da fonte do container mais próximo para calcular seu tamanho, vamos ao exemplo:
 
-```text
+```html
   <div class="wrapper">
     <div class="box">
     </div>
   <div>
 ```
 
-```text
+```css
 .wrapper {
   width: 500px;
   height: 400px
@@ -109,14 +109,14 @@ Esse valor é calculado a partir do tamanho da fonte do container, ou seja, da p
 
 Diferente do **em** a unidade **rem** é sempre relativa ao tamanho da fonte da página, em outras palavras ao tamanho da fonte da tag **html**. Vamos ao exemplo:
 
-```text
+```html
   <div class="wrapper">
     <div class="box">
     </div>
   <div>
 ```
 
-```text
+```css
 html {
   font-size: 16px
 }

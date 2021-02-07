@@ -15,7 +15,7 @@ Alguns exemplos de tags semânticas são:
 
 **header**: usado para definir o cabeçalho da página e introduzir o assunto da página ou de um artigo, geralmente é a primeira tag usada no site.
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,7 +30,7 @@ Alguns exemplos de tags semânticas são:
 </html>
 ```
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +50,7 @@ Alguns exemplos de tags semânticas são:
 
 **section**: representa uma seção dentro do seu site, como uma seção sobre um produto ou uma pessoa.
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,7 +70,7 @@ Alguns exemplos de tags semânticas são:
 
 **aside**: representa uma seção de conteúdo secundário e menos importante do que o conteúdo usado nas **sections**, geralmente usado em menus laterais onde temos informações adicionais do site.
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,7 +95,7 @@ Alguns exemplos de tags semânticas são:
 
 **footer**: usado para definir o rodapé da página/seção ou de uma **section** e contém informações do autor, direitos autorais ou links relacionados ao conteudo da página/seção.
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,7 +118,7 @@ Alguns exemplos de tags semânticas são:
 
 **nav**: representa uma lista de links internos ou externos na página.
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>

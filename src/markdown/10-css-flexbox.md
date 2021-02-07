@@ -14,7 +14,7 @@ O flexbox é a primeira tecnologia do **css** pensada para os layouts da web mod
 
 Para ativar o flexbox em algum elemento na página nós usamos a propriedade display:
 
-```text
+```css
 .container {
   display: flex;
 }

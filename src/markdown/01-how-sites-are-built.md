@@ -17,7 +17,7 @@ O **HTML** é uma linguagem de marcação. HTML - Hyper Text Markup Language ou 
 
 Exemplo de um documento HTML:
 
-```text
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +37,7 @@ O **CSS** por sua vez tem uma função puramente estética: ele serve para modif
 
 Exemplo de um documento CSS:
 
-```text
+```css
 .button {
   width: 90px;
   height: 25px;
@@ -51,7 +51,7 @@ O **Javascript** é a útltima peça desse quebra-cabeça, uma linguaguem de pro
 
 Exemplo de código em JavaScript/EcmaScript:
 
-```text
+```javascript
  var hello = 'Hello World';
 ```
 

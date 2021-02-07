@@ -2,12 +2,17 @@ import React from "react";
 import { graphql, Link } from "gatsby";
 import styled from "styled-components";
 import RehypeReact from "rehype-react";
+import {
+  defineCustomElements as deckDeckGoHighlightElement
+} from "@deckdeckgo/highlight-code/dist/loader";
 
 // Layout
 import Layout from '../components/layout';
 
 // Assets
 import arrow from '../assets/arrow.svg';
+
+deckDeckGoHighlightElement();
 
 const Article = styled.article`
   width: 85%;
@@ -65,15 +70,6 @@ const List = styled.ol`
 const Item = styled.li`
   margin: .75rem 0;
   font: 400 1rem 'Open Sans', sans-serif;
-`;
-
-const CodeContainer = styled.pre`
-  padding: 1rem;
-  border-radius: 4px;
-  color: #f8f8f2;
-  white-space: wrap;
-  font: 400 1rem 'Open Sans', sans-serif;
-  background-color: rgb(24, 48, 85);
 `;
 
 const Links = styled.nav`
@@ -151,7 +147,6 @@ const renderAst = new RehypeReact({
     img: Image,
     ol: List,
     li: Item,
-    pre: CodeContainer,
   },
 }).Compiler;
 
