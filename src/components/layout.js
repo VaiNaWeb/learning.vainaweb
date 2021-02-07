@@ -6,7 +6,7 @@ import './layout.css';
 
 import Menu from './Menu';
 
-const Container = styled.nav`
+const Container = styled.div`
   display: flex;
 `;
 
@@ -40,7 +40,7 @@ const Layout = ({ children, location, noMenu }) => (
           {!noMenu && (
             <Menu links={list} location={location} />
           )}
-          <main>{children}</main>
+          {children}
         </Container>
       );
     }}
