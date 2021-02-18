@@ -47,7 +47,7 @@ Quando estamos começando no **CSS** sempre ficamos perdidos quando vemos determ
   <div>
     <p>
       Meu parágrafo de texto, bla bla bla...
-    <p>
+    </p>
   </div>
 </body>
 </html>
