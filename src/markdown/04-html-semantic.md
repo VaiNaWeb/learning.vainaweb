@@ -7,7 +7,7 @@ id: 4
 
 # 04 - Semântica & Acessibilidade
 
-A internet foi inicialmente concebida como um meio para compartilhar documentos acadêmicos, com o passar dos anos ela se transformou em uma lugar onde as pessoas compartilham os mais variados tipos de documentos, imagens, videos, etc. Essa evolução drástica da internet não foi seguida pela evolução das tecnologias que a sustentam \(**HTML**, **CSS**, **JavaScript**\), por isso nos últimos anos as mentes brilhantes por trás dessas tecnologias começaram a adaptá-las para que servissem ao propósito da internet moderna, uma dessas novidades são as **tags semânticas**.
+A internet foi inicialmente concebida como um meio para compartilhar documentos acadêmicos, com o passar dos anos ela se transformou em um lugar onde as pessoas compartilham os mais variados tipos de documentos, imagens, videos, etc. Essa evolução drástica da internet não foi seguida pela evolução das tecnologias que a sustentam \(**HTML**, **CSS**, **JavaScript**\), por isso nos últimos anos as mentes brilhantes por trás dessas tecnologias começaram a adaptá-las para que servissem ao propósito da internet moderna, uma dessas novidades são as **tags semânticas**.
 
 Alguns exemplos de tags semânticas são:
 
@@ -139,7 +139,7 @@ Alguns exemplos de tags semânticas são:
 
 ## Motivos
 
-O uso de todas essas tags traz varios benefícios:
+O uso de todas essas tags traz vários benefícios:
 
 1 - É muito mais fácil de entender, com as novas tags nós conseguimos diminuir drasticamente o número de tags sem sentido \(div\) e deixamos nosso documento mais limpo.
 
