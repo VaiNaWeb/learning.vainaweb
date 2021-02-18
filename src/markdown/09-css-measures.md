@@ -45,7 +45,7 @@ Diferente do **pixel** as medidas em porcentagem são **relativas**, isso nos po
 <div class="wrapper">
   <div class="box">
   </div>
-<div>
+</div>
 ```
 
 ```css
@@ -82,13 +82,13 @@ Outra unidade relativa é o **em**, muito usado para especificar tamanhos de fon
   <div class="wrapper">
     <div class="box">
     </div>
-  <div>
+  </div>
 ```
 
 ```css
 .wrapper {
   width: 500px;
-  height: 400px
+  height: 400px;
   font-size: 10px;
   margin: 20px auto;
 }
@@ -113,17 +113,17 @@ Diferente do **em** a unidade **rem** é sempre relativa ao tamanho da fonte da 
   <div class="wrapper">
     <div class="box">
     </div>
-  <div>
+  </div>
 ```
 
 ```css
 html {
-  font-size: 16px
+  font-size: 16px;
 }
 
 .wrapper {
   width: 500px;
-  height: 400px
+  height: 400px;
   font-size: 10px;
   margin: 20px auto;
 }
