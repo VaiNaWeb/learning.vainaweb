@@ -21,6 +21,7 @@ const Layout = ({ children, location, noMenu }) => (
           edges {
             node {
               frontmatter {
+                category
                 title
                 slug
                 id
@@ -31,7 +32,11 @@ const Layout = ({ children, location, noMenu }) => (
       }
     `}
     render={data => {
-      const list = data.allMarkdownRemark.edges.map((item) => ({
+      const module = location.pathname.split('/')[1];
+
+      const list = data.allMarkdownRemark.edges.filter(
+        item => item.node.frontmatter.category === module
+      ).map((item) => ({
         ...item.node.frontmatter
       }));
 

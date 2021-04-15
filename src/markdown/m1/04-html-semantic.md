@@ -3,6 +3,7 @@ slug: "/module-1/html-semantic"
 date: "2021-02-05"
 title: "04 - Semântica & Acessibilidade"
 id: 4
+category: "module-1"
 ---
 
 # 04 - Semântica & Acessibilidade

@@ -3,6 +3,7 @@ slug: "/module-1/css-display"
 date: "2021-02-05"
 title: "08 - CSS: Display"
 id: 8
+category: "module-1"
 ---
 
 

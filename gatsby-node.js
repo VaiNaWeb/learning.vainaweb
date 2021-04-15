@@ -12,6 +12,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             frontmatter {
               title
               slug
+              category
             }
           }
         }
@@ -25,14 +26,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
   const posts = result.data.allMarkdownRemark.edges;
 
-  posts.forEach(({ node }, index) => {
+  const m1Content = posts.filter(
+    item => item.node.frontmatter.category === 'module-1'
+  );
+
+  m1Content.forEach(({ node }, index) => {
     createPage({
       path: node.frontmatter.slug,
       component: blogPostTemplate,
       context: {
+        category: node.frontmatter.category,
         slug: node.frontmatter.slug,
-        prev: index === 0 ? null : posts[index - 1].node,
-        next: index === (posts.length - 1) ? null : posts[index + 1].node 
+        prev: index === 0 ? null : m1Content[index - 1].node,
+        next: index === (m1Content.length - 1) ? null : m1Content[index + 1].node 
       },
     })
   })

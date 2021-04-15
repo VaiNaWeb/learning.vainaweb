@@ -3,6 +3,7 @@ slug: "/module-1/css-selectors"
 date: "2021-02-05"
 title: "06 - Seletores CSS"
 id: 6
+category: "module-1"
 ---
 
 
