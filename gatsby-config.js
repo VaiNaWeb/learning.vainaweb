@@ -26,10 +26,10 @@ module.exports = {
         fonts: [
           `limelight`,
           `Open Sans\:300,400,700`,
-          `Roboto\:300,400,700` // you can also specify font weights and styles
+          `Roboto\:300,400,700`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
+        display: "swap",
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -42,13 +42,14 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-highlight-code`,
             options: {
-              terminal: 'carbon',
-              theme: 'dracula',
-              lineNumbers: true
-            }
+              terminal: "carbon",
+              theme: "dracula",
+              lineNumbers: true,
+            },
           },
         ],
       },

@@ -1,9 +1,9 @@
 ---
-slug: "/module-1/css-measures"
+slug: "/frontend/module-1/css-measures"
 date: "2021-02-05"
 title: "09 - CSS: Medidas"
 id: 9
-category: "module-1"
+category: "frontend-module-1"
 ---
 
 

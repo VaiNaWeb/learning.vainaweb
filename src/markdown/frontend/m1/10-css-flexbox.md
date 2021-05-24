@@ -1,9 +1,9 @@
 ---
-slug: "/module-1/css-flexbox"
+slug: "/frontend/module-1/css-flexbox"
 date: "2021-02-05"
 title: "10 - CSS: Flexbox"
 id: 10
-category: "module-1"
+category: "frontend-module-1"
 ---
 
 

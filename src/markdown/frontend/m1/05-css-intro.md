@@ -1,9 +1,9 @@
 ---
-slug: "/module-1/css-intro"
+slug: "/frontend/module-1/css-intro"
 date: "2021-02-05"
 title: "05 - CSS"
 id: 5
-category: "module-1"
+category: "frontend-module-1"
 ---
 
 
