@@ -1,9 +1,9 @@
 ---
-slug: "/module-1/html-forms"
+slug: "/frontend/module-1/html-forms"
 date: "2021-02-05"
 title: "03 - HTML na prática: Forms"
 id: 3
-category: "module-1"
+category: "frontend-module-1"
 ---
 
 # 03 - HTML na prática: Forms

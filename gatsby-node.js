@@ -24,11 +24,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  const posts = result.data.allMarkdownRemark.edges;
+  const posts = result.data.allMarkdownRemark.edges
 
   const m1Content = posts.filter(
-    item => item.node.frontmatter.category === 'module-1'
-  );
+    item => item.node.frontmatter.category === "frontend-module-1"
+  )
 
   m1Content.forEach(({ node }, index) => {
     createPage({
@@ -38,8 +38,30 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         category: node.frontmatter.category,
         slug: node.frontmatter.slug,
         prev: index === 0 ? null : m1Content[index - 1].node,
-        next: index === (m1Content.length - 1) ? null : m1Content[index + 1].node 
+        next: index === m1Content.length - 1 ? null : m1Content[index + 1].node,
       },
     })
   })
-};
+
+  const backendM1Content = posts.filter(
+    item => item.node.frontmatter.category === "backend-module-1"
+  )
+
+  backendM1Content.forEach(({ node }, index) => {
+    console.log(node)
+    createPage({
+      path: node.frontmatter.slug,
+      component: blogPostTemplate,
+      context: {
+        category: node.frontmatter.category,
+        slug: node.frontmatter.slug,
+        prev: index === 0 ? null : backendM1Content[index - 1].node,
+        next:
+          index === backendM1Content.length - 1
+            ? null
+            : backendM1Content[index + 1].node,
+        showTableOfContents: true,
+      },
+    })
+  })
+}
