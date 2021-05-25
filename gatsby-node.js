@@ -27,7 +27,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const posts = result.data.allMarkdownRemark.edges;
 
   const m1Content = posts.filter(
-    item => item.node.frontmatter.category === 'module-1'
+    item => item.node.frontmatter.category === 'module-1' || item.node.frontmatter.category === 'module-2'
   );
 
   m1Content.forEach(({ node }, index) => {
