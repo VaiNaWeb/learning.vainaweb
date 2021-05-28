@@ -67,7 +67,7 @@ const modules = [
     name: 'Interatividade de Páginas',
     description: 'Aprendendo a pensar como um software funciona e desenvolver aplicações usando JavaScript',
     tags: ['lógica', 'js', 'react'],
-    link: null,
+    link: 'module-2/intro',
   },
   {
     id: 3,

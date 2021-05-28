@@ -24,10 +24,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
+
   const posts = result.data.allMarkdownRemark.edges;
 
   const m1Content = posts.filter(
     item => item.node.frontmatter.category === 'module-1'
+  );
+
+  const m2Content = posts.filter(
+    item => item.node.frontmatter.category === 'module-2'
   );
 
   m1Content.forEach(({ node }, index) => {
@@ -38,8 +43,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         category: node.frontmatter.category,
         slug: node.frontmatter.slug,
         prev: index === 0 ? null : m1Content[index - 1].node,
-        next: index === (m1Content.length - 1) ? null : m1Content[index + 1].node 
+        next: index === (m1Content.length - 1) ? null : m1Content[index + 1].node
       },
     })
-  })
+  });
+
+  m2Content.forEach(({ node }, index) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: blogPostTemplate,
+      context: {
+        category: node.frontmatter.category,
+        slug: node.frontmatter.slug,
+        prev: index === 0 ? null : m2Content[index - 1].node,
+        next: index === (m2Content.length - 1) ? null : m2Content[index + 1].node
+      },
+    })
+  });
 };
