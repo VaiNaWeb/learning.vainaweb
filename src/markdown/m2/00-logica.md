@@ -25,7 +25,7 @@ Qualquer profissional que trabalhe no campo da tecnologia irá se beneficiar des
 
 A lógica de programação é a chave para aprender qualquer linguagem. Independente do segmento, tecnologia ou época existem elementos comuns que serão utilizados por praticamente qualquer linguagem de programação. Entender esses fundamentos irá permitir que você navegue por tecnologias com mais facilidade e consiga desenvolver uma carreira com solidez. Vamos conhecer esses princípios:
 
-## Variáveis e Constantes
+### Variáveis e Constantes
 
 Todo software aramzena informações e as linguagens de programação tem um jeito de guardar todo tipo de informação, logo vamos aprender esses diferentes tipos de informações ou dados mas ates disso precisamos responder algo mais fundamental: como e onde a informação é armazenada?
 
@@ -47,6 +47,6 @@ Nessa aula vamos aprender como fazer nosso software executar a mesma operação 
 Aqui vamos aprender como reutilizar o nosso trabalho. Quando estamos programando existe um recurso que nos permite reutilizar uma solução que ja criamos novamente poupando nosso tempo, esse recurso se chama **função**. Ela nos permite executar um pedacinho do nosso código quantas vezes forem necessário, se eu tenho um problema que precisa ser resolvido diversas vezes no meu software eu não preciso escrever um código cada vez que esse problema aparece eu posso criar uma **funcão** com essa solução e toda vez que eu precisar eu posso usá-la e resolver meu problema automaticamente :)
 
 
-## Um conselho de amigo!
+### Um conselho de amigo!
 
 Não menospreze o tempo gasto nesses fundamentos, por mais difícil que esteja, por mais desanimador que pareça, os benefícios e alegrias de se tornar um programador valem a pena o sacrifício. Persevere e siga em frente estou aqui te esperando do lado de cá da ponte pra gente comemorar junto, um abraço!
