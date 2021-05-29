@@ -113,7 +113,7 @@ var slicePerFriend = (pizza * slices) / friends;
 
 ## Boolean
 
-O **boolean** ou **bool** armazena pode armazenar 2 valores: **true** ou **false**.
+O **boolean** ou **bool** pode armazenar 2 valores: **true** ou **false**.
 
 - **true**: representa verdadeiro
 - **false**: representa falso
@@ -121,15 +121,13 @@ O **boolean** ou **bool** armazena pode armazenar 2 valores: **true** ou **false
 Esses 2 valores serão muito utilizados dentro de **condicionais** que vamos aprender em breve :)
 
 
-## Null
+## Null e Undefined
 
 O **null** é um tipo simples do **Javascript** que representa uma variável vazia.
 
 ```javascript
 var country = null;
 ```
-
-## Undefined
 
 O **undefined** é um tipo que representa **valor não definido**. Ele é muito confundido com o **null**, mas por mais que pareçam semelhantes eles tem propósitos diferentes.
 
