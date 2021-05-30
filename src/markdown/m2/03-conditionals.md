@@ -64,12 +64,12 @@ if (isStudent) {
 
 Podemos fazer testes mais complexos nas nossas condições usando os **operadores lógicos**:
 
-> - Maior que
-< - Menor que
->= Maior ou igual que
-<= Menor ou igual que
-=== Igual à
-!== Diferente de
+* > - Maior que
+* < - Menor que
+* >= Maior ou igual que
+* <= Menor ou igual que
+* === Igual à
+* !== Diferente de
 
 ```javascript
 var age = 25;
