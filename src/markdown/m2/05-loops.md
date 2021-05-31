@@ -40,6 +40,22 @@ for(let i = 10; i >= 0; i--){
 }
 ```
 
+Números pares até 100 utilizando **for**:
+
+```javascript
+for(let i = 0; i <= 100; i += 2){
+    console.log(i);
+}
+```
+
+Números ímpares até 100 utilizando **for**:
+
+```javascript
+for(let i = 1; i <= 100; i += 2){
+    console.log(i);
+}
+```
+
 ### Loop Infinito
 
 O **loop infinito** é um **loop** que nunca para de executar e fica eternamente repetindo seu bloco de código. Isso acontece por que a condição de saída nunca é satisfeita:
