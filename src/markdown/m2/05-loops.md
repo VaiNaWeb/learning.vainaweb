@@ -6,24 +6,33 @@ id: 16
 category: "module-2"
 ---
 
-### Loops FOR / WHILE
+# Estruturas de Repetição (Loops)
 
-Loops são laços de repetição que podem executar uma ação diversas vezes.
+Os **loops** são uma estrutura de repetição que podem executar uma bloco de código diversas vezes. Existem alguns tipos de estruturas de repetição no **JavaScript**:
 
-### Loop FOR:
+## for
 
-Este tipo de loop geralmente é usado quando você quer uma quantidade finita e conhecida de repetições.
+Este tipo de **loop** geralmente é usado quando você quer uma quantidade finita e conhecida de repetições. Sempre que usamos uma estrutura de repetição nós usamos o conceito de **contador**.
 
+O **contador** é uma variável que conta quantas vezes aquele bloco de código já foi executado. (é comum usarmos a letra i para nomear o contador)
 
-Exemplo 1 utilizando FOR:
+A estrutura básica é a seguinte:
 
 ```javascript
-for(let i = 0; i <= 10; i++){
+for(contador; condição para sair do loop; incremento do contador) {
+    // codigo que será executado
+}
+```
+
+Contanto até 10 utilizando **for**:
+
+```javascript
+for(let i = 1; i <= 10; i++) {
     console.log(i);
 }
 ```
 
-Exemplo 2 utilizando FOR:
+Contagem regressiva utilizando **for**:
 
 ```javascript
 for(let i = 10; i >= 0; i--){
@@ -31,32 +40,13 @@ for(let i = 10; i >= 0; i--){
 }
 ```
 
-### Loop WHILE:
+### Loop Infinito
 
-Este tipo de loop geralmente é usado quando você não sabe a quantidade total de repetições que precisará iterar o código.
-
-Exemplo de como escrever um loop WHILE:
-
-
-Exemplo utilizando WHILE para contar números de 0 até 10:
+O **loop infinito** é um **loop** que nunca para de executar e fica eternamente repetindo seu bloco de código. Isso acontece por que a condição de saída nunca é satisfeita:
 
 ```javascript
-let i = 0;
-
-while(i <= 10){
-    console.log(i);
-    i++;
-}
-```
-
-Exemplo utilizando WHILE para contar números de 10 até 0:
-
-```javascript
-let i = 10;
-
-while(i >= 0){
-    console.log(i)
-    i--;
+for(let i = 10; i < 5; i++){
+    console.log(i); // esse código será executado eternamente
 }
 ```
 
