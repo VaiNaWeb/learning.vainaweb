@@ -90,26 +90,26 @@ console.log(items) // -> ["water cooler", "teclado gamer", "mouse gamer", "proce
 
 #### pop
 
-O método **pop** remove o primeiro elemento do array:
+O método **pop** remove o último elemento do array:
 
 ```javascript
 let items = ["teclado gamer", "mouse gamer", "processador i9"];
 
 items.pop();
 
-console.log(items) // -> ["mouse gamer", "processador i9"]
+console.log(items) // -> ["teclado gamer", "mouse gamer"]
 ```
 
 #### shift
 
-O método **shift** remove o último elemento do array:
+O método **shift** remove o primeiro elemento do array:
 
 ```javascript
 let items = ["teclado gamer", "mouse gamer", "processador i9"];
 
 items.shift();
 
-console.log(items) // -> ["teclado gamer", "mouse gamer"]
+console.log(items) // -> ["mouse gamer", "processador i9"]
 ```
 
 #### slice
