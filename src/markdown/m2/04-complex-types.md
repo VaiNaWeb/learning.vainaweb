@@ -121,7 +121,7 @@ let items = ["teclado gamer", "mouse gamer", "processador i9", "ssd 256gb", "ram
 
 let myItems = items.slice(1, 4);
 
-console.log(myItems) // -> ["mouse gamer", "processador i9", "ssd 256gb", "ram ddr4"];
+console.log(myItems) // -> ["mouse gamer", "processador i9", "ssd 256gb"];
 ```
 
 No exemplo acima especificamos a posição inicial e final e um **novo array** será criado a partir do array original. O **slice** retorna um novo array sem alterar o original.
