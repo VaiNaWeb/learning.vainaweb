@@ -63,8 +63,6 @@ O **JavaScript** possui uma série de métodos que auxiliam a manipulação de *
 * shift
 * unshift
 * slice
-* map
-* forEach
 
 #### push
 
