@@ -64,12 +64,15 @@ if (isStudent) {
 
 Podemos fazer testes mais complexos nas nossas condições usando os **operadores lógicos**:
 
-* > - Maior que
-* < - Menor que
-* >= Maior ou igual que
-* <= Menor ou igual que
-* === Igual à
-* !== Diferente de
+```
+>   Maior que
+<   Menor que
+>=  Maior ou igual que
+<=  Menor ou igual que
+==  Igual á
+=== Igual e mesmo tipo de dado
+!== Diferente de
+```
 
 ```javascript
 var age = 25;
@@ -96,6 +99,24 @@ var age = 25;
 if (age < 16) {
   console.log('Você não pode votar!!!');
 }
+```
+
+```javascript
+var n1 = 5;
+var n2 = "5";
+
+// Essa condição é verdadeira pois os valores das variáveis são iguais
+
+if (n1 == n2) {
+  console.log('Valores iguais!');
+}
+
+// Essa condição é falsa pois os valores são iguais mas os tipos de dados são diferentes
+
+if (n1 === n2) {
+  console.log('Valor igual e tipo diferente!');
+}
+
 ```
 
 ```javascript
