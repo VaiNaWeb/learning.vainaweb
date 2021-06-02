@@ -8,7 +8,7 @@ category: "module-2"
 
 # Funções
 
-Funções são blocos de códigos reutilizáveis, isso significa que não precisamos reescrever o mesmo código varias vezes. Criamos o codigo atrelamos ele a um nome e sempre que precisarmos podemos chamar esse código usando esse nome.
+Funções são blocos de códigos reutilizáveis, isso significa que não precisamos reescrever o mesmo código varias vezes. Criamos o código atrelamos ele a um nome e sempre que precisarmos podemos chamar esse código usando esse nome.
 
 ## Definindo uma função
 
@@ -34,7 +34,7 @@ olaMundo(); // Olá!
 
 ## Parâmetros
 
-Também podemos passar **parâmetros** para as nossas funções, eles são a porta de entrada para dados de fora da função. Os parâmoetros permitem que eu execute uma função diversas vezes mas com informações distintas:
+Também podemos passar **parâmetros** para as nossas funções, eles são a porta de entrada para dados de fora da função. Os parâmetros permitem que eu execute uma função diversas vezes mas com informações distintas:
 
 ```javascript
 function helloFriend(nome) {
@@ -60,7 +60,7 @@ helloFriend("Tiago Braga"); // -> `Olá Kraken, seja bem vindo(a) ao Vai na Web!
 
 Como já vimos, os **parâmetros** são a porta de entrada da nossa função, eles permitem que nossas funções recebam dados. Podemos ver no exemplo acima nossa **função** "helloPessoa" tem um **parâmetro** chamado **nome**. A dúvida que fica é: e o **argumento**? onde ele está?
 
-**O argumento é o dado que a função recebe no momento da execução**. no nosso exemplo quando executamos a **função** passamos pra ela a **string** "Tiago Braga" ou seja essa **string** é o argumento da nossa **função**.
+**O argumento é o dado que a função recebe no momento da execução**. No nosso exemplo quando executamos a **função** passamos pra ela a **string** "Tiago Braga" ou seja essa **string** é o argumento da nossa **função**.
 
 ## Múltiplos Parâmetros
 
