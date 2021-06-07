@@ -44,7 +44,7 @@ Nessa aula vamos aprender como fazer nosso software executar a mesma operação 
 
 
 ### Funções
-Aqui vamos aprender como reutilizar o nosso trabalho. Quando estamos programando existe um recurso que nos permite reutilizar uma solução que ja criamos novamente poupando nosso tempo, esse recurso se chama **função**. Ela nos permite executar um pedacinho do nosso código quantas vezes forem necessário, se eu tenho um problema que precisa ser resolvido diversas vezes no meu software eu não preciso escrever um código cada vez que esse problema aparece eu posso criar uma **funcão** com essa solução e toda vez que eu precisar eu posso usá-la e resolver meu problema automaticamente :)
+Aqui vamos aprender como reutilizar o nosso trabalho. Quando estamos programando existe um recurso que nos permite reutilizar uma solução que ja criamos novamente poupando nosso tempo, esse recurso se chama **função**. Ela nos permite executar um pedacinho do nosso código quantas vezes forem necessário, se eu tenho um problema que precisa ser resolvido diversas vezes no meu software eu não preciso escrever um código cada vez que esse problema aparece eu posso criar uma **função** com essa solução e toda vez que eu precisar eu posso usá-la e resolver meu problema automaticamente :)
 
 
 ### Um conselho de amigo!
