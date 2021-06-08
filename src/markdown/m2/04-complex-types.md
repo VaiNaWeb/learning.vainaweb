@@ -1,7 +1,7 @@
 ---
 slug: "/module-2/complex-types"
 date: "2021-02-05"
-title: "03 - Tipos de Dados Complexos"
+title: "04 - Tipos de Dados Complexos"
 id: 15
 category: "module-2"
 ---
