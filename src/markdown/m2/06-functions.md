@@ -13,23 +13,23 @@ Funções são blocos de códigos reutilizáveis, isso significa que não precis
 ## Definindo uma função
 
 ```javascript
-function olaMundo() {
-    console.log("Olá mundo!");
+function helloWorld() {
+    console.log("Hello World!");
 }
 
-olaMundo(); // Olá!
+helloWorld(); // helloWorld!
 ```
 
-No exemplo acima nós criamos uma **função** chamada "olaMundo". Podemos reutilizar essa função a qualquer momento usando seu nome seguido de parênteses:
+No exemplo acima nós criamos uma **função** chamada "helloWorld". Podemos reutilizar essa função a qualquer momento usando seu nome seguido de parênteses:
 
 ```javascript
-function olaMundo() {
-    console.log("Olá mundo!");
+function helloWorld() {
+    console.log("Hello World!");
 }
 
-olaMundo(); // Olá!
-olaMundo(); // Olá!
-olaMundo(); // Olá!
+helloWorld(); // Hello World!
+helloWorld(); // Hello World!
+helloWorld(); // Hello World!
 ```
 
 ## Parâmetros
@@ -37,8 +37,8 @@ olaMundo(); // Olá!
 Também podemos passar **parâmetros** para as nossas funções, eles são a porta de entrada para dados de fora da função. Os parâmetros permitem que eu execute uma função diversas vezes mas com informações distintas:
 
 ```javascript
-function helloFriend(nome) {
-    console.log(`Olá ${nome}, seja bem vindo(a) ao Vai na Web!`);
+function helloFriend(name) {
+    console.log(`Olá ${name}, seja bem vindo(a) ao Vai na Web!`);
 }
 
 helloFriend("Kraken"); // -> `Olá Kraken, seja bem vindo(a) ao Vai na Web!`
@@ -51,8 +51,8 @@ helloFriend("Kelvin"); // -> `Olá Kelvin, seja bem vindo(a) ao Vai na Web!`
 Muitas vezes nos confundimos esses 2 conceitos e acabamos tratando-os como sinônimos, vamos entender melhor quem é quem nessa história:
 
 ```javascript
-function helloFriend(nome) {
-    console.log(`Olá ${nome}, seja bem vindo(a) ao Vai na Web!`);
+function helloFriend(name) {
+    console.log(`Olá ${name}, seja bem vindo(a) ao Vai na Web!`);
 }
 
 helloFriend("Tiago Braga"); // -> `Olá Kraken, seja bem vindo(a) ao Vai na Web!`
@@ -67,8 +67,8 @@ Como já vimos, os **parâmetros** são a porta de entrada da nossa função, el
 As **funções** podem receber quantos parâmetros forem necessários, mas existe uma regra: **respeite a ordem definida na criação da função**. Vamos entender com um exemplo:
 
 ```javascript
-function helloFriend(nome, apelido) {
-    console.log(`Olá ${nome}, seja bem vindo(a) ao Vai na Web! Posso lhe chamar de ${apelido}?`);
+function helloFriend(name, nickname) {
+    console.log(`Olá ${name}, seja bem vindo(a) ao Vai na Web! Posso lhe chamar de ${nickname}?`);
 }
 
 helloFriend("Ygor Fonseca", "Kraken"); // -> `Olá Ygor Fonseca, seja bem vindo(a) ao Vai na Web! Posso lhe chamar de Kraken?`
@@ -77,8 +77,8 @@ helloFriend("Ygor Fonseca", "Kraken"); // -> `Olá Ygor Fonseca, seja bem vindo(
 Notem que quando a **função** foi executada os **argumentos** passados seguem a ordem dos **parâmetros** definidos na criação da **função**. Vamos mudar e ver o que acontece?
 
 ```javascript
-function helloFriend(nome, apelido) {
-    console.log(`Olá ${nome}, seja bem vindo(a) ao Vai na Web! Posso lhe chamar de ${apelido}?`);
+function helloFriend(name, nickname) {
+    console.log(`Olá ${name}, seja bem vindo(a) ao Vai na Web! Posso lhe chamar de ${nickname}?`);
 }
 
 helloFriend("Kraken", "Ygor Fonseca"); // -> `Olá Kraken, seja bem vindo(a) ao Vai na Web! Posso lhe chamar de Ygor Fonseca?`
