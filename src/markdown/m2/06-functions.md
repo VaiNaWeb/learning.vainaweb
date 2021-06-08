@@ -1,7 +1,7 @@
 ---
 slug: "/module-2/functions"
 date: "2021-02-05"
-title: "05 - Funções"
+title: "06 - Funções"
 id: 17
 category: "module-2"
 ---
