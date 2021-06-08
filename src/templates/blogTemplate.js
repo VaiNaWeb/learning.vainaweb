@@ -8,6 +8,7 @@ import {
 
 // Layout
 import Layout from '../components/layout';
+import SEO from "../components/seo"
 
 // Assets
 import arrow from '../assets/arrow.svg';
@@ -160,6 +161,7 @@ export default function Template({
 
   return (
     <Layout location={location}>
+      <SEO title="Aulas | Academia" />
       <Article>
         {renderAst(htmlAst)}
         <Links
