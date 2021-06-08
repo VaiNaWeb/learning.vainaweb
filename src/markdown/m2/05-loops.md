@@ -1,7 +1,7 @@
 ---
 slug: "/module-2/loops"
 date: "2021-02-05"
-title: "04 - Loops"
+title: "05 - Loops"
 id: 16
 category: "module-2"
 ---
