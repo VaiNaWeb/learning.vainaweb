@@ -1,7 +1,7 @@
 ---
 slug: "/module-2/switch"
 date: "2021-02-05"
-title: "06 - Switch"
+title: "07 - Switch"
 id: 18
 category: "module-2"
 ---
