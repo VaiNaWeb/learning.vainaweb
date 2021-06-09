@@ -65,14 +65,14 @@ const projects = [
     id: 1,
     name: 'Counter',
     description: 'Um contador que aumenta e diminui um número exibido na tela. Nele o aluno vai aprender o que é o state e como interagir com eventos básicos como o click.',
-    design: 'https://alicecomoura.github.io/quiz-js-ar/',
+    design: 'https://competent-hopper-0aa6bc.netlify.app/',
     level: 'basic'
   },
   {
     id: 2,
     name: 'Calculator',
     description: 'Expandindo os conhecimentos de state vamos criar uma calculadora que executa as 4 operações matemáticas em 2 números. Nesse desafio vamos usar inputs e o evento onchange.',
-    design: 'https://alicecomoura.github.io/quiz-js-ar/',
+    design: 'https://hungry-kowalevski-e59cad.netlify.app/',
     level: 'basic'
   },
   {
