@@ -61,6 +61,7 @@ const modules = [
     description: 'Aprendendo como a internet funciona e a criar páginas responsivas',
     tags: ['html', 'css', 'responsive design'],
     link: 'module-1/how-it-works',
+    projectsLink: null
   },
   {
     id: 2,
@@ -68,6 +69,7 @@ const modules = [
     description: 'Aprendendo a pensar como um software funciona e desenvolver aplicações usando JavaScript',
     tags: ['lógica', 'js', 'react'],
     link: 'module-2/intro',
+    projectsLink: 'projects-react'
   },
   {
     id: 3,
@@ -75,6 +77,7 @@ const modules = [
     description: 'Aprendendo a criar uma aplicação robusta e a pensar a arquitetura do código',
     tags: ['front-end first', 'testes automatizados', 'hooks'],
     link: null,
+    projectsLink: null
   }
 ];
 
@@ -88,6 +91,7 @@ const IndexPage = ({ location }) => {
         description={module.description}
         tags={module.tags}
         link={module.link}
+        projectsLink={module.projectsLink}
       />
     ));
   };
@@ -97,7 +101,7 @@ const IndexPage = ({ location }) => {
       location={location}
       noMenu
     >
-      <SEO title="Academia" />
+      <SEO title="Início | Academia" />
       <Container>
         <Logo src="https://www.vainaweb.com.br/assets/Logo-VnW.svg" />
         <Message>

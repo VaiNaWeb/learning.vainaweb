@@ -85,6 +85,16 @@ const MyLink = styled(Link)`
   text-decoration: none;
   font: 400 .95rem 'Roboto', sans-serif;
   background-color: #FFAC2D;
+
+  ${({ disabled }) => disabled &&`
+    opacity: 0.7;
+  `}
+`;
+
+const Buttons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const Message = styled.span`
@@ -102,7 +112,8 @@ const Module = ({
   name,
   description,
   tags,
-  link
+  link,
+  projectsLink
 }) => {
   const renderTags = () => {
     return tags.map((tag, index) => (
@@ -120,10 +131,20 @@ const Module = ({
       <TagList>
         {renderTags()}
       </TagList>
-      {link 
-        ? <MyLink to={link}>Acessar</MyLink>
-        : <Message>Em breve!</Message>
-      }
+      <Buttons>
+        <MyLink
+          to={link}
+          disabled={!link}
+        >
+          Aulas
+        </MyLink>
+        <MyLink
+          to={projectsLink}
+          disabled={!projectsLink}
+        >
+          Projetos
+        </MyLink>
+      </Buttons>
     </Container>
   );
 };
