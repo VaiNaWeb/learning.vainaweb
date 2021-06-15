@@ -86,8 +86,7 @@ const projects = [
     id: 4,
     name: 'Netflix',
     description: 'Vamos elevar o nível com esse buscador de filmes. Nesse app você poderá buscar por filmes e visualizar os detalhes (sinopse, stars, tags). Vamos entender como conversar com uma API na prática com esse desafio e entender um pouco sobre components',
-    design: 'https://bigsondev.com/projects/find-movies-app-project/',
-    design: 'https://alicecomoura.github.io/quiz-js-ar/',
+    design: 'https://stoic-noether-bf6e94.netlify.app/',
     level: 'medium',
   },
   {
