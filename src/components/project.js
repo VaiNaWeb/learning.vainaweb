@@ -59,8 +59,9 @@ const Project = ({
       {design && (
         <Link
           href={design}
+          target="_blank"
         >
-          Design
+          Live
         </Link>
       )}
     </Container>

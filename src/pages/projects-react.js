@@ -60,6 +60,18 @@ const List = styled.ul`
   padding: 0;
 `;
 
+const Credits = styled.p`
+  margin: 2rem 0;
+  color: #505050;
+  text-align: center;
+  font: 400 1rem 'Roboto', sans-serif;
+`;
+
+const TextLink = styled.a`
+  color: #0F2B92;
+  text-decoration: none;
+`;
+
 const projects = [
   {
     id: 1,
@@ -79,12 +91,12 @@ const projects = [
     id: 3,
     name: 'Todo - Básico',
     description: 'O clássico to-do, uma lista de tarefas onde o usuário pode adicionar, marcar e excluir tarefas. Vamos aplicar nossos conhecimentos de arrays nesse desafio.',
-    design: 'https://alicecomoura.github.io/quiz-js-ar/',
+    design: 'https://fervent-mcnulty-fb5e23.netlify.app/',
     level: 'basic'
   },
   {
     id: 4,
-    name: 'Netflix',
+    name: 'Movies',
     description: 'Vamos elevar o nível com esse buscador de filmes. Nesse app você poderá buscar por filmes e visualizar os detalhes (sinopse, stars, tags). Vamos entender como conversar com uma API na prática com esse desafio e entender um pouco sobre components',
     design: 'https://stoic-noether-bf6e94.netlify.app/',
     level: 'medium',
@@ -142,6 +154,9 @@ const Projects = ({ location }) => {
         <List>
           {renderProjects()}
         </List>
+        <Credits>
+          Alguns projetos (Movies e Todo) são inspirados no trabalho de <TextLink target="_blank" href="https://bigsondev.com/projects/">Bigson Dev</TextLink> 💜
+        </Credits>
       </Container>
     </Layout>
   );
