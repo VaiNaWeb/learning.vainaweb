@@ -1,8 +1,10 @@
-import React from "react"
+import React from "react";
 import styled from "styled-components";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+
+import LogoImg from '../assets/logo-vnw.svg';
 
 // Components
 import Module from "../components/module";
@@ -103,7 +105,7 @@ const IndexPage = ({ location }) => {
     >
       <SEO title="Início | Academia" />
       <Container>
-        <Logo src="https://www.vainaweb.com.br/assets/Logo-VnW.svg" />
+        <Logo src={LogoImg} />
         <Message>
           Olá! Aqui você vai encontrar todo o material de apoio relacionado as carreiras do Vai na Web.
         </Message>
