@@ -35,6 +35,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     item => item.node.frontmatter.category === 'module-2'
   );
 
+  const m3Content = posts.filter(
+    item => item.node.frontmatter.category === 'module-3'
+  );
+
   m1Content.forEach(({ node }, index) => {
     createPage({
       path: node.frontmatter.slug,
@@ -57,6 +61,19 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         slug: node.frontmatter.slug,
         prev: index === 0 ? null : m2Content[index - 1].node,
         next: index === (m2Content.length - 1) ? null : m2Content[index + 1].node
+      },
+    })
+  });
+
+  m3Content.forEach(({ node }, index) => {
+    createPage({
+      path: node.frontmatter.slug,
+      component: blogPostTemplate,
+      context: {
+        category: node.frontmatter.category,
+        slug: node.frontmatter.slug,
+        prev: index === 0 ? null : m3Content[index - 1].node,
+        next: index === (m3Content.length - 1) ? null : m3Content[index + 1].node
       },
     })
   });
