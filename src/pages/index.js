@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { graphql } from 'gatsby';
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -56,43 +57,29 @@ const ModulesList = styled.ul`
   }
 `;
 
-const modules = [
-  {
-    id: 1,
-    name: 'Páginas Web Responsivas',
-    description: 'Aprendendo como a internet funciona e a criar páginas responsivas',
-    tags: ['html', 'css', 'responsive design'],
-    link: 'module-1/how-it-works',
-    projectsLink: null
-  },
-  {
-    id: 2,
-    name: 'Interatividade de Páginas',
-    description: 'Aprendendo a pensar como um software funciona e desenvolver aplicações usando JavaScript',
-    tags: ['lógica', 'js', 'react'],
-    link: 'module-2/intro',
-    projectsLink: 'projects-react'
-  },
-  {
-    id: 3,
-    name: 'Arquitetura Front-End',
-    description: 'Aprendendo a criar uma aplicação robusta e a pensar a arquitetura do código',
-    tags: ['front-end first', 'testes automatizados', 'hooks'],
-    link: null,
-    projectsLink: null
+export const IndexQuery = graphql`
+  query {
+    vnw {
+      modules {
+        name
+        description
+        slug
+        tags
+      }
+    }
   }
-];
+`;
 
-const IndexPage = ({ location }) => {
+const IndexPage = ({ location, data }) => {
   const renderModules = () => {
-    return modules.map((module) => (
+    return data.vnw.modules.map((module, index) => (
       <Module
         key={module.id}
-        id={module.id}
+        id={index + 1}
         name={module.name}
         description={module.description}
         tags={module.tags}
-        link={module.link}
+        link={`/module-${index + 1}/${module.slug}`}
         projectsLink={module.projectsLink}
       />
     ));

@@ -53,6 +53,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        typeName: "vnw",
+        fieldName: "vnw",
+        url: "https://api-us-west-2.graphcms.com/v2/cktj8t3rt089d01zc2uti6iej/master"
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
