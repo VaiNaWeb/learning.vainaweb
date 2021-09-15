@@ -2,11 +2,11 @@
 slug: "/module-3/hooks-lifecycle"
 date: "2021-09-15"
 title: "01 - Hooks Lifecycle"
-id: 31
+id: 32
 category: "module-3"
 ---
 
-# 00 - Como usar lifecycles em componentes funcionais?
+# 01 - Como usar lifecycles em componentes funcionais?
 
 Usando componentes funcionais nós não conseguimos usar os métodos de lifecycle que estamos acostumados (componentDidMount, componentDidUpdate, componentWillUnmount). No mundo dos hooks temos um jeito para continuar executando códigos quando um componente é renderizado ou quando algum estado é alterado, para isso vamos usar o **useEffect**.
 
