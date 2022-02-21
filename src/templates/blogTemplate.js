@@ -206,7 +206,6 @@ export const pageQuery = graphql`
       html
       htmlAst
       frontmatter {
-        date(formatString: "MM DD, YYYY")
         slug
         title
       }
