@@ -1,43 +1,52 @@
 ---
 slug: "/module-1/how-it-works"
-date: "2021-02-05"
+date: "2022-20-02"
 title: "00 - Como a internet funciona?"
 id: 0
 category: "module-1"
 ---
 
-# 00 - Como funciona a internet?
+# Como funciona a internet?
 
-Todos nós usamos diariamente diversos aplicativos e sites, a internet ocupa uma porção enorme de nossas vidas. Desde o entretenimento até o estudo, no trabalho ou em casa, nas relações com amigos ou pessoas do outro lado do mundo. Em quase todas as atividades do dia, de alguma forma, estamos usando a internet, ela muda diariamente, das mais diversas formas, as nossas profissões e acelera o desenvolvimento de todas as tecnologias: assistir um filme nunca foi tão rápido, aprender um novo idioma nunca foi tão fácil, achar um livro nunca foi tão simples. É impossível viver no século XXI sem entender como usar essa ferramenta para melhorar nossas vidas.
+Diariamente a internet ocupa uma porção enorme de nossas vidas. Desde o entretenimento até o estudo, no trabalho ou em casa, nas relações com amigos ou pessoas do outro lado do mundo. Hoje conseguimos pedir comida, agendar consultas, pagar contas e até comprar remédios pela internet.
 
-## Do navegador ao servidor do Google em segundos!
+Em constante mudança, ela muda diariamente as formas de se comunicar e acelera o desenvolvimento de todas as tecnologias: assistir um filme nunca foi tão rápido, aprender um novo idioma nunca foi tão fácil, achar um livro nunca foi tão simples.
 
-Vamos dar alguns passos para trás e entender como nossas informações saem do nosso computador e chegam até os mais distantes lugares do planeta.
+Viver no século XXI sem entender as possibilidades de uso dessa ferramenta pode ser uma tarefa bem difícil.
+
+## Do navegador ao servidor do Google em segundos 🚀
 
 ![Google](https://media.giphy.com/media/xQaeWyINrUXOE/giphy.gif)
 
-A internet funciona baseada em um modelo chamado **"cliente - servidor"**, o navegador é o nosso **cliente**, com ele conseguimos acessar recursos na internet usando uma série de protocolos \(TCP/IP, DNS, HTTP\) esses recursos por sua vez estão armazenados em um **servidor**, \(geralmente em um galpão enorme com milhares de computadores\):
+A internet funciona baseada em um modelo chamado **"cliente - servidor"**.
 
-![Servidor](https://gcn.com/-/media/GIG/GCN/Redesign/Articles/Oct-2012/googledatacenter.png)
+O **navegador** é o nosso **cliente** e com ele conseguimos acessar recursos na internet usando uma série de protocolos \(TCP/IP, DNS, HTTP\), esses recursos por sua vez estão armazenados em um **servidor**, geralmente em um galpão enorme com milhares de computadores:
 
-Toda vez que digitamos www.google.com em nosso navegador uma série de operações acontecem em uma velocidade impressionante e de repente a página do google está diante de nossos olhos, vamos quebrar isso em etapas:
+![Servidor](https://lh3.googleusercontent.com/W4JxFZmBMVdhsnbO_SDYUCclut_7Yc89eMgjWxwicilPeY9a9UXRxLE43T44WWR6Z5B65GKJaebO0J3lsVOJbQtkgzJdJmmuKIMNS4M=w600-l100-sg-rj-c0xffffff)
 
-1. A primeira coisa que o nosso navegador faz e uma requisição para um servidor muito especial chamado **DNS**, esse servidor é responsável por nos dar o endereço do servidor \(**IP Address**\) que precisamos, no nosso caso o do Google.
-2. O servidor **DNS** devolve para o navegador o **IP** do servidor requisitado. Como os computadores são encontrados através do **IP** e não por seus nomes esses servidores **DNS** armazenam em uma tabela gigante o nome de todos os sites do mundo e seus respectivos **IP's**. Imaginem termos que decorar os números de todos os sites, Obrigado **DNS**! ❤️ ❤️ ❤️
-3. Com esse endereço em mãos nosso navegador agora envia uma segunda requisição ao endereço IP do Google usando um protocolo chamado **HTTP** \(pense no HTTP como um idioma que o seu navegador irá usar para conversar com o servidor\)
-4. Os dados chegam ao servidor do Google são processados e agora o servidor devolve as informações necessárias para o navegador e então o seu navegador processa os dados e monta a sua página na tela
+Toda vez que digitamos *www.google.com* em nosso navegador uma série de operações acontecem em uma velocidade impressionante e de repente a página do google está diante de nossos olhos.
+
+ Vamos quebrar isso em etapas:
 
 ![Servidor/Cliente](https://github.com/VaiNaWeb/gitbook-assets/raw/master/modulo-1/images/server-client.png)
 
-**Cliente** - um computador capaz de acessar a internet \(seu navegador, seu celular\)
+1. Quando digitamos o nome do site, a primeira coisa que o nosso navegador faz é pedir para um servidor chamado **DNS** o *endereço* correspondente ao nome que digitamos \(**IP Address**\)
+2. O servidor DNS devolve para o navegador o IP do servidor requisitado \(pois os computadores são encontrados através do número do endereço IP e não pelo nome digitado no navegador.\)
+3. Com esse endereço em mãos, nosso navegador envia uma segunda requisição ao endereço IP do Google usando um protocolo chamado **HTTP** 
+4. Quando nossa requisição chega ao servidor do Google, o pedido é processado e então o servidor devolve as informações requisitadas para o navegador. Em seguida, o navegador processa os dados recebidos e monta a sua página na tela :)
 
-**Servidor** - um computador conectado a internet 24h capaz de receber requisições, processar, e devolver informações
+<br>
 
-**IP** - um número único que cada servidor possui para ser encontrado, semelhante ao endereço da sua casa
+### Palavras e siglas importantes:
+**Cliente** - é qualquer dispositivo capaz de acessar a internet \(seu navegador, seu celular\)
 
-**DNS** - um servidor especial que possui uma tabela gigante onde guarda o nome e o **IP** de todos os sites do mundo
+**Servidor** - um super computador conectado 24h por dia e capaz de receber requisições, processar, e devolver informações requisitadas
 
-**HTTP** - um protocolo de comunicação que o seu navegador usa para "conversar" com o servidor \(uma especie de idioma baseado no padrão de requisição-resposta\)
+**IP** - essa sigla significa *Internet Protocol*, ou seja, Protocolo de Internet. Esse é o protocolo responsável por atribuir um número identificador único para que cada servidor possa para ser encontrado corretamente na web \(semelhante ao endereço de uma  casa\) 
+
+**DNS** - essa aqui significa *Domain Name Sistem*, ou Sistema de Nomes de Domínios. O DNS é um servidor especial que possui uma tabela gigante onde guarda o **IP** correspondente ao nome de todos os sites do mundo. Imaginem se tivéssemos que decorar os números de todos os sites que a gente gosta? Obrigado **DNS**! ❤️ ❤️ ❤️ 
+
+**HTTP** - *Hypertext Transfer Protocol* é um protocolo de comunicação que o seu navegador usa para "conversar" com o servidor \(uma especie de idioma baseado no padrão de requisição-resposta\)
 
 ![bye bye](https://media.giphy.com/media/42D3CxaINsAFemFuId/giphy.gif)
 

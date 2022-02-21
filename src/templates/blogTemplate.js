@@ -17,7 +17,7 @@ deckDeckGoHighlightElement();
 
 const Article = styled.article`
   width: 85%;
-  max-width: 1110px;
+  max-width: 1440px;
   padding: 0 10%;
   margin-left: 20vw;
 
@@ -49,10 +49,11 @@ const FourthTitle = styled.h3`
 `;
 
 const Paragraph = styled.p`
-  margin: 1.5rem 0;
+  margin: 1.5rem 0.2rem;
   color: #505050;
-  font: 400 .95rem 'Open Sans', sans-serif;
+  font: 400 1rem 'Open Sans', sans-serif;
   line-height: 1.75;
+  text-align:justify;
 `;
 
 const Image = styled.img`

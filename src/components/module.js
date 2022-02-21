@@ -97,15 +97,15 @@ const Buttons = styled.div`
   align-items: center;
 `;
 
-const Message = styled.span`
-  width: 40%;
-  display: block;
-  margin: 1.5rem auto 0;
-  padding: 0;
-  color: #FFAC2D;
-  text-align: center;
-  font: 400 .95rem 'Roboto', sans-serif;
-`;
+// const Message = styled.span`
+//   width: 40%;
+//   display: block;
+//   margin: 1.5rem auto 0;
+//   padding: 0;
+//   color: #FFAC2D;
+//   text-align: center;
+//   font: 400 .95rem 'Roboto', sans-serif;
+// `;
 
 const Module = ({
   id,
@@ -138,12 +138,12 @@ const Module = ({
         >
           Aulas
         </MyLink>
-        <MyLink
+        {/* <MyLink
           to={projectsLink}
           disabled={!projectsLink}
         >
           Projetos
-        </MyLink>
+        </MyLink> */}
       </Buttons>
     </Container>
   );
