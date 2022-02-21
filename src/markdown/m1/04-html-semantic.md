@@ -8,13 +8,15 @@ category: "module-1"
 
 # 04 - Semântica & Acessibilidade
 
-A internet foi inicialmente concebida como um meio para compartilhar documentos acadêmicos, com o passar dos anos ela se transformou em um lugar onde as pessoas compartilham os mais variados tipos de documentos, imagens, videos, etc. Essa evolução drástica da internet não foi seguida pela evolução das tecnologias que a sustentam \(**HTML**, **CSS**, **JavaScript**\), por isso nos últimos anos as mentes brilhantes por trás dessas tecnologias começaram a adaptá-las para que servissem ao propósito da internet moderna, uma dessas novidades são as **tags semânticas**.
+A internet foi inicialmente concebida como um meio de compartilhamento de documentos acadêmicos e com o passar dos anos ela se transformou em um lugar onde podemos compartilhar os mais variados tipos de documentos, imagens, videos, etc. 
 
-Alguns exemplos de tags semânticas são:
+Buscando acompanhar essa evolução drástica da internet,  as mentes brilhantes por trás das tecnologias que sustentam a web \(**HTML**, **CSS**, **JavaScript**\) começaram a adaptá-las para que servissem ao avanço da internet moderna. 
 
-**main**: define o conteúdo principal da sua página, deve ser único na página.
+Uma dessas novidades são as **tags semânticas**.
 
-**header**: usado para definir o cabeçalho da página e introduzir o assunto da página ou de um artigo, geralmente é a primeira tag usada no site.
+##Alguns exemplos de **tags semânticas** são:
+
+### <**main**> : marca o conteúdo principal da sua página e deve ser único.
 
 ```html
 <!DOCTYPE html>
@@ -31,6 +33,9 @@ Alguns exemplos de tags semânticas são:
 </html>
 ```
 
+### <**header**>: usado para definir o cabeçalho da página e introduzir o assunto da página ou de um artigo. Geralmente é o primeiro elemento a ser mostrado visualmente.
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +46,7 @@ Alguns exemplos de tags semânticas são:
 <body>
   <main>
     <header>
-      <h1>José da Silva</h1>
+      <h1>Marlon Brando</h1>
       <h2>Músico<h2>
     </header>
   </main>
@@ -49,7 +54,7 @@ Alguns exemplos de tags semânticas são:
 </html>
 ```
 
-**section**: representa uma seção dentro do seu site, como uma seção sobre um produto ou uma pessoa.
+### <**section**>: representa uma seção dentro do seu site, como uma seção sobre um produto ou uma pessoa.
 
 ```html
 <!DOCTYPE html>
@@ -62,14 +67,14 @@ Alguns exemplos de tags semânticas são:
   <main>
     <section>
       <h1>Sobre Mim</h1>
-      <p>Eu começei minha carreira no ano de 1990...<p>
+      <p>Eu gosto de brócolis.<p>
     </section>
   </main>
 </body>
 </html>
 ```
 
-**aside**: representa uma seção de conteúdo secundário e menos importante do que o conteúdo usado nas **sections**, geralmente usado em menus laterais onde temos informações adicionais do site.
+### <**aside**>: representa uma seção de conteúdo secundário e menos importante do que o conteúdo usado nas **sections**. Geralmente usado em menus laterais onde temos informações adicionais do site.
 
 ```html
 <!DOCTYPE html>
@@ -82,19 +87,19 @@ Alguns exemplos de tags semânticas são:
   <main>
     <section>
       <h1>Sobre Mim</h1>
-      <p>Olá, meu nome é josé e sou um guitarrista.</p>
+      <p>Olá, meu nome é Dan e sou professor.</p>
     </section>
 
     <aside>
-      <h3>Bateria<h3>
-      <p>A guitarra é um instrumento de cordas</p>
+      <h3>Educação<h3>
+      <p>A educação é um instrumento de transformação.</p>
     </aside>
   </main>
 </body>
 </html>
 ```
 
-**footer**: usado para definir o rodapé da página/seção ou de uma **section** e contém informações do autor, direitos autorais ou links relacionados ao conteudo da página/seção.
+### <**footer**>: usado para definir o rodapé da página ou de uma **section** e contém informações referente ao autor, direitos autorais ou links relacionados ao conteúdo.
 
 ```html
 <!DOCTYPE html>
@@ -117,7 +122,7 @@ Alguns exemplos de tags semânticas são:
 </html>
 ```
 
-**nav**: representa uma lista de links internos ou externos na página.
+### <**nav**>: representa uma lista de links internos ou externos na página. Geralmente usado como menu de navegação pela página.
 
 ```html
 <!DOCTYPE html>
@@ -138,13 +143,15 @@ Alguns exemplos de tags semânticas são:
 </html>
 ```
 
-## Motivos
+## Motivos para usar tags semânticas
 
 O uso de todas essas tags traz vários benefícios:
 
-1 - É muito mais fácil de entender, com as novas tags nós conseguimos diminuir drasticamente o número de tags sem sentido \(div\) e deixamos nosso documento mais limpo.
+1 - É muito mais fácil de entender nossa estrutura com as novas tags. Com elas nós conseguimos diminuir drasticamente o número de tags sem sentido como a \<div\> e deixamos nosso documento mais limpo.
 
-2 - Seu site será muito mais facilmente encontrado pelos buscadores \(Google\).
+2 - Seu site será encontrado por buscadores como o **Google** de forma mais fácil.
 
-3 - Seu site poderá ser lido por leitores de tela e auxiliar pessoas com debilidades visuais.
+3 - Seu site poderá ser lido por leitores de tela e auxiliar pessoas com deficiência. ❤️ 
 
+
+![bye bye](https://66.media.tumblr.com/86ac44885069c0b0e5fad2fadeeca8a1/tumblr_nd35r9BUzR1rqfhi2o1_500.gif)

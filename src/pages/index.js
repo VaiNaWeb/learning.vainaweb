@@ -17,7 +17,6 @@ const Container = styled.main`
   width: 80%;
   margin: 0 auto;
   max-width: 1440px;
-
   @media (max-width: 667px) {
     width: 90%;
   }
@@ -34,7 +33,7 @@ const Message = styled.span`
   width: 50%;
   margin: 1.5rem auto;
   text-align: center;
-  font: 400 1.15rem 'Roboto', sans-serif;
+  font: 400 1.5rem 'Roboto', sans-serif;
 
   @media (max-width: 667px) {
     width: 90%;
@@ -94,7 +93,7 @@ const IndexPage = ({ location, data }) => {
       <Container>
         <Logo src={LogoImg} />
         <Message>
-          Olá! Aqui você vai encontrar todo o material de apoio relacionado as carreiras do Vai na Web.
+          Olá! Aqui você encontra todo o material de apoio relacionado as carreiras do Vai na Web :)
         </Message>
         <ModulesList>
           {renderModules()}

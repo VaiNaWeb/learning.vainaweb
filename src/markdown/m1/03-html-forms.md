@@ -12,15 +12,14 @@ category: "module-1"
 
 A tag **form** \(formulário\) é utilizada para agrupar elementos interativos, onde o usuário vai inserir informações que serão enviadas para um servidor. As tags mais comuns utilizadas em formulários são:
 
-1. Label
-2. Input
-3. Button
+1. \<label\>
+2.  \<input\>
+3.  \<button\>
 
 Exemplo de um formulário html:
 
 ```html
-<!-- Simple form which will send a POST request -->
-<form action="" method="post">
+<form>
   <label for="name">Name:</label>
   <input id="name" type="text" name="name" placeholder="escreva seu nome">
   <input type="submit" value="Save">
@@ -29,14 +28,18 @@ Exemplo de um formulário html:
 
 Vamos quebrar esse código em partes:
 
+1. Marcando nosso formulário: 
+
 ```html
-<!-- Simple form which will send a POST request -->
-<form action="" method="post">
+
+<form>
 
 </form>
 ```
 
 Primeiro criamos uma tag **form** que será responsável por agrupar todos os campos e buttons que iremos usar.
+
+2. Criando uma legenda visível:
 
 ```html
 <label for="name">Name:</label>
@@ -44,11 +47,19 @@ Primeiro criamos uma tag **form** que será responsável por agrupar todos os ca
 
 Agora criamos uma tag **label** que é usada como legenda para a tag **input** que vamos usar no próximo passo.
 
+3. Criando o primeiro input:
+
 ```html
 <input id="name" type="text" name="name" placeholder="escreva seu nome">
 ```
 
-A tag **input** é como criamos um campo onde o usuário irá digitar as informações, esse campo pode ser de diferentes tipos: \(text, email, password\). No nosso caso o **input** tem o tipo **"text"**, notem também que usamos um atributo chamado **placeholder** que é utilizado para exibir um texto dentro do campo enquanto ele está vazio.
+Usamos a tag **input** para criar um campo onde o usuário pode digitar as informações pedidas no formulário. 
+
+Esse campo pode receber diferentes tipos de dados: text, email, password, number, tel, por exemplo. 
+
+No nosso caso o **input** tem o tipo **"text"**, notem também que usamos um atributo chamado **placeholder** que é utilizado para exibir um texto dentro do campo enquanto ele está vazio.
+
+4. Criando um botão:
 
 ```html
 <input type="submit" value="Save">
@@ -56,10 +67,10 @@ A tag **input** é como criamos um campo onde o usuário irá digitar as informa
 
 Por último temos um **input** com um type especial chamado **submit**, esse **input** é utilizado para submeter \(enviar\) o formulário para um servidor quando ele é clicado. Na prática ele é um **button** que envia todos os dados escritos nos campos para algum servidor.
 
-Agrupando todas essas tags nós temos nosso primeiro formulário pronto :\)
+Agrupando todas essas tags nós temos nosso primeiro formulário pronto :)
 
 ```html
-<form action="" method="post">
+<form>
   <label for="name">Name:</label>
   <input id="name" type="text" name="name" placeholder="escreva seu nome">
   <input type="submit" value="Save">

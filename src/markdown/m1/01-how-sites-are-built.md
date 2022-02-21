@@ -8,15 +8,21 @@ category: "module-1"
 
 # 01 - Como os sites são construídos?
 
-Como ja sabemos, a internet trabalha no modelo **cliente/servidor**, no fim do dia tudo que o nosso navegador \(cliente\) faz é interpretar os arquivos que recebe do servidor e renderizar na tela. Mas que arquivos são esses? Existe algum padrão? Como esses arquivos são feitos?
+Vimos na última aula que a internet trabalha no modelo **cliente/servidor**. No fim do dia tudo que o nosso navegador \(cliente\) faz é interpretar os arquivos que recebe do servidor e renderizar na tela. Mas que arquivos são esses? Existe algum padrão? Como esses arquivos são feitos?
 
-Para exibir um website na tela seu navegador usará 3 linguagens diferentes: **HTML**, **CSS** e **Javascript**:
+Para exibir um website na tela, seu navegador usará 3 linguagens diferentes: **HTML**, **CSS** e **Javascript**:
+
+![HTML,CSS,JS](https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif)
 
 ## HTML
 
-O **HTML** é uma linguagem de marcação. HTML - Hyper Text Markup Language ou em português: Linguagem de Marcação de Hipertexto. A sua função é marcar o conteúdo da página e garantir que o conteúdo tenha semântica \(significado\), esse processo é feito por meio de **TAGS**. Por meio dessas **TAGS** nós conseguimos criar documentos que tenham significado e possam ser entendido por outras pessoas e computadores \(servidores e clientes\).
+**HTML** - *Hyper Text Markup Language* ou em português: Linguagem de Marcação de Hipertexto.
 
-Exemplo de um documento HTML:
+O **HTML** é uma linguagem de marcação e sua função é marcar o conteúdo da página e garantir que o conteúdo tenha semântica \(significado\). Esse processo é feito por meio de **TAGS** que nos permitem criar documentos que tenham significado e possam ser entendido por outras pessoas e computadores \(servidores e clientes\).
+
+<img src="https://diegomariano.com/wp-content/uploads/2020/08/tag.png" alt="tag example" width="200"/>
+
+###Exemplo de um documento HTML:
 
 ```html
 <!DOCTYPE html>
@@ -31,12 +37,15 @@ Exemplo de um documento HTML:
 </body>
 </html>
 ```
+<br>
 
 ## CSS
 
-O **CSS** por sua vez tem uma função puramente estética: ele serve para modificar a aparencia dos documentos **HTML**. O **CSS** - Cascading Style Sheets ou em português: Folha de Estilos em Cascata. É um mecanismo muito poderoso para personalizar os documentos **HTML** usando uma série de propriedades que modificam tamanhos, espaços, posicionamento, cores, fontes, etc.
+**CSS** - *Cascading Style Sheet* ou em português: Folha de Estilos em Cascata.
 
-Exemplo de um documento CSS:
+O **CSS** por sua vez tem uma função puramente estética: serve para modificar a aparencia dos documentos **HTML**. O **CSS** é um mecanismo muito poderoso para personalizar os documentos **HTML** usando uma série de propriedades que modificam tamanhos, espaços, posicionamento, cores, fontes, etc.
+
+###Exemplo de um documento CSS:
 
 ```css
 .button {
@@ -45,16 +54,18 @@ Exemplo de um documento CSS:
   background-color: purple;
 }
 ```
+<br>
 
-## Javascript
+## JavaScript
 
-O **Javascript** é a útltima peça desse quebra-cabeça, uma linguaguem de programação criada em 1995 utilizada principalmente no navegador \(também pode ser usada no lado do servidor\) e tem a responsabiliade de tornar as páginas web mais interativas modificando os documentos **HTMl** e **CSS** no momento da execução da página. Ela vem evoluindo muito na ultima década e é mantida e padronizada pelo grupo [ECMA](https://www.ecma-international.org/) dando origem ao seu nome oficial: **ECMAScript**
+O **JavaScript** é a útltima peça desse quebra-cabeça. O **JS** é uma linguaguem de programação criada em 1995 utilizada principalmente no lado do cliente \(mas também pode ser usada no lado do servidor\) e tem a responsabiliade de tornar as páginas web mais interativas modificando os documentos **HTML** e **CSS** no momento da execução da página. Nosso querido JS vem evoluindo muito na última década e hoje é mantida e padronizada pelo grupo [ECMA](https://www.ecma-international.org/), dando origem ao seu nome oficial: **ECMAScript**
 
-Exemplo de código em JavaScript/EcmaScript:
+###Exemplo de código em JavaScript/EcmaScript:
 
 ```javascript
  var hello = 'Hello World';
 ```
 
-![HTML,CSS,JS](https://media.giphy.com/media/fuJPZBIIqzbt1kAYVc/giphy.gif)
+
+![bye bye](https://38.media.tumblr.com/51a5e55dc04c26b623bd2245e42ee5f2/tumblr_n7ghy9Fevo1smcbm7o1_400.gif)
 
