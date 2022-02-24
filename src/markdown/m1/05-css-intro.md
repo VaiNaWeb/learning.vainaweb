@@ -9,11 +9,15 @@ category: "module-1"
 
 # 05 - CSS
 
-Como ja vimos o **CSS - \(Folha de Estilo em Cascata\)** tem uma função estética, usamos com o propósito de modificar a aparência dos elementos, vamos entender como isso acontece:
+Como já vimos, o **CSS - \(Folha de Estilo em Cascata\)** tem uma função estética e o usamos com o propósito de modificar a aparência dos elementos. 
+
+Vamos entender como isso acontece?
 
 ## Sintaxe
 
-O nosso documento css consiste de vários **seletores** que descrevem quais elementos e como eles serão modificados, essa é a sintaxe de um seletor:
+O nosso documento CSS consiste de vários **seletores** que descrevem quais elementos e como eles serão modificados. 
+
+Abaixo temos a sintaxe de um seletor:
 
 ```css
 p {
@@ -21,9 +25,9 @@ p {
 }
 ```
 
-Começamos descrevendo qual elemento queremos modificar, podemos modificar uma **classe** um **id** ou uma **tag**. No exemplo acima estamos dizendo que todas as modificações desse **seletor** serão aplicadas em qualquer tag **p** \(parágrafo\).
+Começamos descrevendo qual elemento queremos modificar. Podemos modificar uma **.classe** um **#id** ou uma **\<tag\>**. No exemplo acima estamos dizendo que todas as modificações desse **seletor** serão aplicadas em qualquer tag **p** \(parágrafo\).
 
-Dentro do **seletor** temos o que chamamos de **propriedades** e seus respectivos **valores**, no exemplo usamos a propriedade **color** e o valor **blue**. Com esse código todos os parágrafos da página serão exibidos na cor azul. **Notem que precisamos usar os dois pontos após o nome da propriedade e um ponto e vírgula ao final da linha**
+Dentro das chaves do **seletor** temos o que chamamos de **propriedades** e seus respectivos **valores**. No exemplo acima usamos a propriedade **color** (cor) e o valor **blue** (azul). Com esse código todos os parágrafos da página serão exibidos na cor azul. **Notem que precisamos usar os dois pontos após o nome da propriedade e um ponto e vírgula ao final da linha**.
 
 Esse é o modelo, não se esqueça dele :\)
 
@@ -35,7 +39,7 @@ seletor {
 
 ## Herança
 
-Quando estamos começando no **CSS** sempre ficamos perdidos quando vemos determinados **styles** sendo aplicados em algum elemento que não sabemos de onde veio e isso pode causar um pouco de dificuldade no processo de aprendizado da tecnologia, vamos entender isso com um exemplo:
+Quando estamos começando no **CSS** sempre ficamos perdidos quando vemos determinados **styles** sendo aplicados em algum elemento que não sabemos de onde veio e isso pode causar um pouco de dificuldade no processo de aprendizado da tecnologia. Vamos entender isso com um exemplo:
 
 ```html
 <!DOCTYPE html>
@@ -43,6 +47,7 @@ Quando estamos começando no **CSS** sempre ficamos perdidos quando vemos determ
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
   <div>
@@ -64,7 +69,7 @@ Se rodarmos esse código vamos perceber que nosso parágrafo irá ser renderizad
 
 ## Especificidade
 
-Para melhor usarmos o **CSS** no dia a dia entender o conceito de **especificidade** é fundamental. Isso vai poupar muito tempo com a cabeça no teclado tentando entender por que seu layout não é renderizado da maneira correta.
+Para um melhor uso do **CSS** no dia a dia, é fundamental entender o conceito de **especificidade** . Isso vai poupar muito tempo tentando entender por que seu layout não é renderizado da maneira correta.
 
 Imagine o seguinte cenário:
 
@@ -74,16 +79,17 @@ Imagine o seguinte cenário:
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
   <div>
     <p>
-      Kraken!!!
+      Bom dia!!!
     </p>
   </div>
 
   <p>
-    Kelvin!!!
+    CSS é muito legal!!!
   </p>
 </body>
 </html>
@@ -99,11 +105,13 @@ div p {
 }
 ```
 
-No exemplo acima temos dois parágrafos mas um deles está dentro de uma **div** e o outro não, no nosso **CSS** temos 2 **seletores** um que muda todos os parágrafos e outro **seletor** que muda apenas os parágrafos dentro de uma **div**, se testarmos esse código veremos que o nome Kraken ficará em vermelho e o nome Kelvin em azul. Isso acontece por causa da **especificidade** de cada **seletor**, toda vez que o **navegador** encontrar 2 regras conflitantes em um mesmo elemento a opção mais específica é usada. No nosso exemplo o segundo seletor **div p {}** tem uma **especificidade** maior do que o seletor acima dele **p {}** por isso suas regras prevalecem.
+No exemplo acima temos dois parágrafos mas um deles está dentro de uma **div** e o outro não. No **CSS** temos 2 **seletores**: um que muda todos os parágrafos e outro **seletor** que muda apenas os parágrafos dentro de uma **div**. 
+
+Ao testarmos esse código, veremos que a frase *Bom dia!!!* ficará em vermelho e a frase *CSS é muito legal!!* em azul. Isso acontece por causa da **especificidade** de cada **seletor**. Toda vez que o **navegador** encontrar 2 regras conflitantes em um mesmo elemento, a opção mais específica é usada. No nosso exemplo o segundo seletor **div p {}** tem uma **especificidade** maior do que o seletor acima dele **p {}** por isso suas regras prevalecem.
 
 ## Cascata
 
-O termo **cascata** está presente no nome da tecnologia, obviamente ele deve ser importante nesse universo. Vamos entender o que ele significa:
+O termo **cascata** está presente no nome da tecnologia CSS e obviamente ele é importante nesse processo. Vamos entender o que ele significa:
 
 ```html
 <!DOCTYPE html>
@@ -111,6 +119,7 @@ O termo **cascata** está presente no nome da tecnologia, obviamente ele deve se
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
   <p>
@@ -130,7 +139,7 @@ p {
 }
 ```
 
-Se testarmos o código acima no nosso navegador veremos que o texto terá a cor roxa isso significa que o **navegador** aplicou o segundo **seletor** e ignorou o primeiro. Esse é o conceito de **cascata**: **Quando duas regras se aplicam ao mesmo elemento e tem a mesma especificidade a que vier por último será usada**.
+Se testarmos o código acima no nosso navegador veremos que o texto terá a cor roxa. Isso significa que o **navegador** aplicou o segundo **seletor** e ignorou o primeiro. Esse é o conceito de **cascata**: **Quando duas regras se aplicam ao mesmo elemento e tem a mesma especificidade, a que estiver por último será usada**.
 
 ![bye bye](https://media.giphy.com/media/gHVEO9ydQDDl4AJcfc/giphy.gif)
 

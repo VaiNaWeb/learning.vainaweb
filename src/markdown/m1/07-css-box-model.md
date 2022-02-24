@@ -9,7 +9,7 @@ category: "module-1"
 
 # 07 - CSS: Box Model
 
-Entender o conceito de **box model** é importantíssimo para criar nossos layouts, vamos investigar como o **navegador** aplica os tamanhos que definimos no nosso **CSS** e as principais propriedades usadas.
+Entender o conceito de **box model** é importantíssimo para a criação de nossos layouts. Vamos investigar como o **navegador** aplica os tamanhos que definimos no nosso **CSS** e as principais propriedades usadas.
 
 ## Definindo Tamanhos
 
@@ -21,6 +21,7 @@ Vamos criar uma **div** e entender como o **box model** define o que vemos na p�
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
   <h1>Meu Quadrado</h1>
@@ -39,7 +40,7 @@ Vamos criar uma **div** e entender como o **box model** define o que vemos na p�
 }
 ```
 
-Com esse código inicial vamos ver uma quadrado vermelho na tela com 150px de largura e 150px de altura, vamos adicionar mais **propriedades** no nosso **CSS** e ver como isso afeta nosso layout:
+Com esse código inicial vamos ver um quadrado vermelho na tela com 150px de largura e 150px de altura. Adicionaremos mais **propriedades** no nosso **CSS** e ver como isso afeta nosso layout:
 
 ```css
 .box {
@@ -62,12 +63,12 @@ Temos outras 2 **propriedades** muito importantes: **margin** e **padding**, amb
 
 **width** - define a largura do elemento  
 **height** - define a altura do elemento  
-**margin** - adiciona espaço entre o elemento e os outros em volta  
-**padding** - adiciona espaço entre o conteúdo em si e a borda
+**margin** - adiciona espaço entre a caixa em si e os elementos em volta  
+**padding** - adiciona espaço entre o conteúdo e a borda da caixa
 
 Inspecionando o quadrado no **browser** vamos ver que ele tem na verdade 180px de largura e 180px de altura mas foi especificado 150px por 150px, por que isso acontece?
 
-O nosso **browser** calcula os espaços dos elementos de uma maneira um pouco diferente do que imaginamos, quando nós adicionamos um **padding** de 15px estamos criando um espaço desse tamanho em todos os lados do elemento \(acima, abaixo, esquerda, direita\). O navegador então vai adicionar ao tamanho final esses espaços internos, somando o espaço interno da esquerda e da direita com a largura temos:
+O nosso **browser** calcula os espaços dos elementos de uma maneira um pouco diferente do que imaginamos, quando nós adicionamos um **padding** de 15px estamos criando um espaço desse tamanho em todos os lados do conteúdo \(acima, abaixo, esquerda, direita\). O navegador então vai adicionar ao tamanho final esses espaços internos, somando o espaço interno da esquerda e da direita com a largura temos:
 
 **150 + 15 + 15 = 180px**
 
@@ -79,7 +80,7 @@ Esse comportamento não é tão evidente e acaba confundindo os desenvolvedores 
 
 ## Box Sizing
 
-Como vimos o **navegador** não define os tamanhos dos elementos de uma maneira muito conveniente, mas nós podemos sobscrever esse comportamento com uma **propriedade** chamada **box-sizing**, vamos colocar em prática:
+Como vimos, o **navegador** não define os tamanhos dos elementos de uma maneira muito conveniente, mas nós podemos sobscrever esse comportamento com uma **propriedade** chamada **box-sizing**:
 
 ```css
 .box {
