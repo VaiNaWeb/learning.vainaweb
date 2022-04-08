@@ -28,9 +28,9 @@ import React, { Component } from 'react'
 
 export default function Teste(){
     return(
-        <div>
+      <div>
         <h1>Eu sou um componente</h1>
-        </div>
+      </div>
     )
 }
 
