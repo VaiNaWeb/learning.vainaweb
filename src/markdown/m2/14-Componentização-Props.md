@@ -25,7 +25,6 @@ Dentro do arquivo Teste.js criamos nossa estrutura desejada:
 
 ```javascript
 import React, { Component } from 'react'
-
 export default function Teste(){
     return(
       <div>
