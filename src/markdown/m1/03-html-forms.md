@@ -77,5 +77,29 @@ Agrupando todas essas tags nós temos nosso primeiro formulário pronto :)
 </form>
 ```
 
+Há ainda muitos atributos úteis que não vimos ainda, por agora, veremos mais alguns dos mais usados.
+
+1. \<textarea\>
+2. \<input type="radio"\>
+3. \<input type="checkbox"\>
+4. \<select\>
+5. \<fieldsets\>
+6. \<legend\>
+
+
+Criando o primeiro textarea:
+
+Diferente do input, esse elemento pode aceitar textos maiores, ideal para quando queremos receber um texto com mais de uma linha.Ele aceita apenas um tipo de valor, o atributo name.
+
+```html
+<form>
+  ...
+    <textarea name="comentario">
+      Deixe aqaui seu comentaario...
+    </textarea>
+  ...
+</form>
+```
+
 ![thanks](https://media.giphy.com/media/psmj7c3DbrJKkbRYFj/giphy.gif)
 
